@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copiar archivos de dependencias
 COPY package.json package-lock.json ./
-RUN npm ci --only=production
+RUN npm ci --legacy-peer-deps
 
 # Stage 2: Builder
 FROM node:20-alpine AS builder
