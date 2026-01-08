@@ -34,13 +34,13 @@ export default function Welcome9() {
                                 <img src="/assets/images/sectionimg/welcome8.png" alt="" className="welcome9" />
                                 <div className="others9-type aniamtion-key-1">
                                     <div className="groupexpo">
-                                        <img src="/assets/images/icons/groupexport.png" alt="" />
+                                        <img src="/assets/images/icons/groupexport1.svg" alt="" />
                                     </div>
                                     <p className="font-16 font-ks lineh-16 weight-600 color-h9">Insurance Policies</p>
                                 </div>
                                 <div className="others9-type otherstype9 aniamtion-key-2">
                                     <div className="groupexpo">
-                                        <img src="/assets/images/icons/groupexport.png" alt="" />
+                                        <img src="/assets/images/icons/groupexport1.svg" alt="" />
                                     </div>
                                     <p className="font-16 font-ks lineh-16 weight-600 color-h9">Premium Calculation</p>
                                 </div>
@@ -52,13 +52,13 @@ export default function Welcome9() {
               </div> */}
                                 <div className="otherstype10" data-aos="fade-left" data-aos-easing="linear" data-aos-duration={800}>
                                     <div className="groupexpo">
-                                        <img src="/assets/images/icons/groupexport.png" alt="" />
+                                        <img src="/assets/images/icons/groupexport1.svg" alt="" />
                                     </div>
                                     <p className="font-16 font-ks lineh-16 weight-600 color-h9">Insurance IQ Advisors</p>
                                 </div>
                                 <div className="otherstype11" data-aos="fade-left" data-aos-easing="linear" data-aos-duration={1000}>
                                     <div className="groupexpo">
-                                        <img src="/assets/images/icons/groupexport.png" alt="" />
+                                        <img src="/assets/images/icons/groupexport1.svg" alt="" />
                                     </div>
                                     <p className="font-16 font-ks lineh-16 weight-600 color-h9">Trust Guard Consulting</p>
                                 </div>

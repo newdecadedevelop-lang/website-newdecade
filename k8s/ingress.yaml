@@ -1,0 +1,51 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: newdecade-website-ingress
+  namespace: newdecade
+  annotations:
+    # DigitalOcean Load Balancer annotations
+    kubernetes.io/ingress.class: "nginx"
+    # SSL deshabilitado temporalmente - se activará cuando tengas dominio
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  # TLS deshabilitado - descomentar cuando tengas dominio
+  # tls:
+  # - hosts:
+  #   - tu-dominio.com
+  #   - www.tu-dominio.com
+  #   secretName: newdecade-tls
+  rules:
+  # Regla por defecto - funciona con la IP del LoadBalancer
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: newdecade-website-service
+            port:
+              number: 80
+  # Descomenta estas reglas cuando tengas dominio:
+  # - host: tu-dominio.com
+  #   http:
+  #     paths:
+  #     - path: /
+  #       pathType: Prefix
+  #       backend:
+  #         service:
+  #           name: newdecade-website-service
+  #           port:
+  #             number: 80
+  # - host: www.tu-dominio.com
+  #   http:
+  #     paths:
+  #     - path: /
+  #       pathType: Prefix
+  #       backend:
+  #         service:
+  #           name: newdecade-website-service
+  #           port:
+  #             number: 80

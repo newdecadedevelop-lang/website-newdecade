@@ -83,7 +83,7 @@ FOOTER AREA CSS
   background: #196C68;
 }
 #pre-load.loader9 {
-  background: #1DAF68;
+  background: #003385;
 }
 #pre-load.loader10 {
   background: #86B03C;
@@ -299,7 +299,7 @@ FOOTER AREA CSS
 
 }
 .main-menu-ex.homepage5.homepage9 ul li ul li a:hover {
-  background: #1DAF68;
+  background: #003385;
 }
 
 .split-line {
@@ -1154,7 +1154,7 @@ a.theme-btn11.consulting7btn:hover {
   color: #fff;
 }
 .consultingbtn9 {
-    background: #1DAF68;
+    background: #003385;
 }
 .consultingbtn9 span{
   color: #fff;
@@ -2452,7 +2452,7 @@ a.consulitingbt7{
   margin-left: 8px;
 }
 .consulting9{
-  background: #1DAF68;
+  background: #003385;
   padding: 18px 22px;
   display: inline-block;
   position: relative;
@@ -2485,7 +2485,7 @@ a.consulitingbt7{
 }
   a.consulting10 {
     border-radius: 4px;
-    background: #1DAF68;
+    background: #003385;
     padding: 18px 22px;
     display: inline-block;
     position: relative;
@@ -2524,7 +2524,7 @@ a.consulting10:hover {
 }
 span.insurance {
   border-radius: 2px;
-  background: rgba(29, 175, 104, 0.10);
+  background: rgba(29, 75, 175, 0.1);
   padding: 8px 12px;
 }
 .welcome9-section-area {
@@ -5157,7 +5157,7 @@ img.elementors60 {
 
 .service9icons {
   border-radius: 70px;
-  background: #1DAF68;
+  background: #003385;
   display: inline-block;
   height: 70px;
   width: 70px;
@@ -5178,7 +5178,7 @@ img.elementors60 {
   width: 100%;
   height: 6px;
   border-radius: 0px 0px 4px 4px;
-  background: #1DAF68;
+  background: #003385;
   transition: all .4s ease-in-out;
   z-index: -1;
 }
@@ -6243,7 +6243,7 @@ background: #080D06;
   width: 95%;
   border-radius: 5px;
   height: 100%;
-  background-color: #1DAF68;
+  background-color: #003385;
   position: absolute;
 }
 .flexhtml {
@@ -6309,7 +6309,7 @@ img {}
 .works-author-icon::after {
     position: absolute;
     content: "";
-    background: #1DAF68;
+    background: #003385;
     height: 25px;
     width: 25px;
     border-radius: 50%;
@@ -6322,7 +6322,7 @@ img {}
 .works9-boxarea::after {
     position: absolute;
     content: "";
-    background: #1DAF68;
+    background: #003385;
     height: 6px;
     width: 100%;
     border-radius:  4px;
@@ -6775,7 +6775,7 @@ img.elementor-3 {
 }
 .service-auhtor9-boxarea:hover {
     border-radius: 4px;
-    background: #1DAF68;
+    background: #003385;
     transition: all .4s ease-in-out;
 }
 .service-auhtor9-boxarea:hover a {
@@ -6784,7 +6784,7 @@ img.elementor-3 {
 }
 .service-auhtor9-boxarea:hover a span {
     background: #fff;
-    color: #1DAF68;
+    color: #003385;
     transition: all .4s ease-in-out;
 }
 .service-auhtor9-boxarea{
@@ -7303,11 +7303,11 @@ img.elemneotrs13 {
   right: 0;
 }
 .toggle-inner.inner4{
-  background: #1DAF68;
+  background: #003385;
 }
 .pricing9-boxarea a {
   border-radius: 4px;
-  background: #1DAF68;
+  background: #003385;
   padding: 18px 22px;
   display: block;
   text-align: center;
@@ -7329,7 +7329,7 @@ img.elemneotrs13 {
   align-items: center;
 }
 .features9 ul li span{
-  background: #1DAF68;
+  background: #003385;
   height: 20px;
   width: 20px;
   display: inline-block;
@@ -7357,21 +7357,21 @@ img.elemneotrs13 {
 }
 .pricing9-boxarea:hover a{
   background: #fff;
-  color: #1DAF68;
+  color: #003385;
 }
 .pricing9-boxarea:hover{
-    background:  #1DAF68;
+    background:  #003385;
     transition: all .4s ease-in-out;
 }
 .pricing9-boxarea:hover .features9{
-  background: #4ABF86;
+  background: #414141;
 }
 .pricing9-boxarea:hover p{
   color: rgba(255, 255, 255, 0.90)
 }
 .pricing9-boxarea:hover .features9 span{
   background: #fff;
-  color: #1DAF68;
+  color: #003385;
   transition: all .4s ease-in-out;
 }
 .pricing9-boxarea:hover h5{
@@ -7930,7 +7930,7 @@ padding: 32px;
   position: relative;
 }
 .testimnials9-boxarea:hover{
-  background-color: #1DAF68;
+  background-color: #003385;
   transform: all .4s ease-in-out ;
 }
 .testimnials9-boxarea:hover p{
@@ -7970,7 +7970,7 @@ img.qutiosvg {
 }
 
 .testimonials9-carousel-area.owl-carousel.owl-loaded.owl-drag .owl-dots button.owl-dot.active {
-  background: #1DAF68;
+  background: #003385;
   border: none;
 }
 .testimonial10-section-area{
@@ -9026,7 +9026,7 @@ img.elementors15 {
     margin-bottom: 30px;
 }
 .blog9-boxarea a:hover{
-  color: #1DAF68;
+  color: #003385;
   transition: all .4s ease-in-out;
 }
 
@@ -9983,7 +9983,7 @@ img.elementors17 {
 }
 button.contact9btn {
   border-radius: 4px;
-  background: #1DAF68;
+  background: #003385;
   border: none;
   outline: none;
   padding: 18px 22px;
@@ -10089,7 +10089,7 @@ img.trandparency1 {
   padding-left: 30px;
 }
 .phonearea-contact9:hover{
-  background-color: #1DAF68;
+  background-color: #003385;
   transition: all .4s ease-in-out;
   transform: translateY(-10px);
 }
@@ -11359,7 +11359,7 @@ a.solutions2 span svg {
   transform: rotate(-45deg);
 }
 .cta9-section-area{
-  background: #1DAF68;
+  background: #003385;
 }
 a.contactcta9 {
   background: #fff;
@@ -11389,7 +11389,7 @@ a.contactcta10 {
   border-radius: 4px;
   background: #fff;
   transition: all .4s ease-in-out;
-  color: #1DAF68;
+  color: #003385;
   transform: translateY(-5px);
 
 }
@@ -12352,10 +12352,10 @@ img.elementor19 {
 .copyright6{
   position: relative;
 }
-.social3-links-area.list9area ul li a {background: #fff;color: #1DAF68;}
+.social3-links-area.list9area ul li a {background: #fff;color: #003385;}
 
 .social3-links-area.list9area ul li a:hover {
-    background: #1DAF68;
+    background: #003385;
     color: #fff;
 }
 .footer9-section-area6 {
@@ -12374,7 +12374,7 @@ img.elementors62 {
     bottom: 0;
 }
 button.contactbtn6.contacts9 {
-  background: #1DAF68;
+  background: #003385;
 }
 .footer10links ul li a:hover {
   color: #86B03C;

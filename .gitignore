@@ -130,3 +130,7 @@ dist
 .pnp.*
 
 .claude
+
+# Kubernetes config files (contain sensitive tokens)
+k8s/*kubeconfig*.yaml
+*kubeconfig*.yaml

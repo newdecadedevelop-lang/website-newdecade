@@ -25,7 +25,7 @@ export default function About9() {
                                 <div className="progress-resonsive margin-t32">
                                     <div className="group-progress">
                                         <div className="group-icons">
-                                            <img src="/assets/images/icons/groupexport.png" alt="" />
+                                            <img src="/assets/images/icons/groupexport1.svg" alt="" />
                                         </div>
                                         <div className="bar" data-aos="fade-left" data-aos-duration={1400}>
                                             <div className="info">
@@ -40,7 +40,7 @@ export default function About9() {
                                     </div>
                                     <div className="group-progress" data-aos="fade-left" data-aos-duration={1400}>
                                         <div className="group-icons">
-                                            <img src="/assets/images/icons/groupexport.png" alt="" />
+                                            <img src="/assets/images/icons/groupexport1.svg" alt="" />
                                         </div>
                                         <div className="bar margin-t32">
                                             <div className="info">
@@ -55,7 +55,7 @@ export default function About9() {
                                     </div>
                                     <div className="group-progress" data-aos="fade-left" data-aos-duration={1400}>
                                         <div className="group-icons">
-                                            <img src="/assets/images/icons/groupexport.png" alt="" />
+                                            <img src="/assets/images/icons/groupexport1.svg" alt="" />
                                         </div>
                                         <div className="bar margin-t32">
                                             <div className="info">

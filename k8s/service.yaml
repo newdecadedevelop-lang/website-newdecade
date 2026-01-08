@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: newdecade-website-service
+  namespace: newdecade
+  labels:
+    app: newdecade-website
+spec:
+  type: ClusterIP
+  selector:
+    app: newdecade-website
+  ports:
+  - name: http
+    port: 80
+    targetPort: 3000
+    protocol: TCP
+  sessionAffinity: None
