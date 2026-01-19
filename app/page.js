@@ -24,7 +24,6 @@ export default function Home() {
                 <Pricing5 />
                 <Testimonial9 />
                 <Blog9 />
-                <Conatact2 />
                 <Cta9 />
             </Layout>
         </>

@@ -2526,9 +2526,10 @@ span.insurance {
   border-radius: 2px;
   background: rgba(29, 75, 175, 0.1);
   padding: 8px 12px;
+  margin-top: 30px;
 }
 .welcome9-section-area {
-  padding: 150px 0 80px;
+  padding: 100px 0 80px;
 }
 
 .welconme8-imga img {
@@ -2536,7 +2537,7 @@ span.insurance {
   height: 100%;
   object-fit: cover;
   position: relative;
-  left: 115px;
+  /*left: 115px;*/
 }
 img.elementors19 {
   position: absolute;
@@ -2556,7 +2557,7 @@ img.animation8class {
 .others-author-area9 {
   position: relative;
   top: 200px;
-  left: 50px;
+  left: 40px;
 }
 img.header9 {
   width: 100%;
@@ -5164,7 +5165,7 @@ img.elementors60 {
   text-align: center;
   line-height: 70px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 20px;
   transition: all .4s ease-in-out;
   z-index: 2;

@@ -11,6 +11,7 @@ import "../public/assets/css/plugins/aos.css"
 import "../public/assets/css/typography.css"
 import "../public/assets/css/master.css"
 import "../public/assets/css/plugins/responsive.css"
+import "../public/assets/css/insurance-quote-modal.css"
 
 const nunito = Nunito({
     weight: ['300', '400', '500', '600', '700'],

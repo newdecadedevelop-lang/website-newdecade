@@ -1,23 +1,6 @@
 import Link from "next/link"
-import { useState } from 'react'
-export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: "",
-    })
 
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
-    }
+export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
     return (
         <>
             <div className="mobile-header mobile-header-4 d-block d-lg-none homepagesmall">
@@ -25,7 +8,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                     <div className="col-12">
                         <div className="mobile-header-elements">
                             <div className="mobile-logo">
-                                <Link href="/index1"><img src="/assets/images/logo/logo7.png" alt="" /></Link>
+                                <Link href="/"><img src="/assets/images/logo/ND_LOGO_WHITE.png" alt="New Decade Insurance" /></Link>
                             </div>
                             <div className="mobile-nav-icon dots-menu" onClick={handleMobileMenu}>
                                 <i className="fa-solid fa-bars" />
@@ -37,7 +20,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
             <div className={`mobile-sidebar ${isMobileMenu ? "mobile-menu-active" : ""}`}>
                 <div className="logoicons-area">
                     <div className="logos">
-                        <img src="/assets/images/logo/logo7.png" alt="" />
+                        <img src="/assets/images/logo/ND_LOGO_WHITE.png" alt="New Decade Insurance" />
                     </div>
                     <div className="menu-close" onClick={handleMobileMenu}>
                         <i className="fa-solid fa-xmark" />
@@ -45,83 +28,24 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                 </div>
                 <div className="mobile-nav">
                     <ul className="mobile-nav-list">
-                        <li className="has-sub hash-has-sub">
-                            <span className={isActive.key == 1 ? "submenu-button submenu-opened" : "submenu-button"} onClick={() => handleToggle(1)}><em /></span>
-                            <Link href="#" className="font-ks font-16 weight-500 color">Home </Link>
-                            <ul className="sub-menu" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
-                                <li><Link href="/index1" className="font-ks font-16 weight-500 color">Law Consulting 01</Link></li>
-                                <li><Link href="/index7" className="font-ks font-16 weight-500 color">Law Consulting 02</Link></li>
-                                <li><Link href="/index3" className="font-ks font-16 weight-500 color">Tax Consulting 01</Link></li>
-                                <li><Link href="/index8" className="font-ks font-16 weight-500 color">Tax Consulting 02</Link></li>
-                                <li><Link href="/index2" className="font-ks font-16 weight-500 color">Business Consulting 01</Link>
-                                </li>
-                                <li><Link href="/index5" className="font-ks font-16 weight-500 color">Business Consulting 02</Link>
-                                </li>
-                                <li><Link href="/index4" className="font-ks font-16 weight-500 color">Finance Consulting 01</Link>
-                                </li>
-                                <li><Link href="/index6" className="font-ks font-16 weight-500 color">Finance Consulting 02</Link>
-                                </li>
-                                <li><Link href="/index9" className="font-ks font-16 weight-500 color">Insurance Consulting 01</Link>
-                                </li>
-                                <li><Link href="/index10" className="font-ks font-16 weight-500 color">Insurance Consulting 02</Link>
-                                </li>
-                                <li><Link href="/index11" className="font-ks font-16 weight-500 color">Visa Consulting 01</Link></li>
-                                <li><Link href="/index12" className="font-ks font-16 weight-500 color">Visa Consulting 02</Link></li>
-                            </ul>
+                        <li>
+                            <Link href="/" className="font-ks font-18 weight-600 color">Home</Link>
                         </li>
-                        <li className="has-sub hash-has-sub">
-                            <Link href="/about" className="font-ks font-18 weight-600 color">About</Link></li>
-                        <li className="has-sub hash-has-sub">
-                            <span className={isActive.key == 2 ? "submenu-button submenu-opened" : "submenu-button"} onClick={() => handleToggle(2)}><em /></span>
-                            <Link href="#" className="font-ks font-16 weight-500 color">Our Services</Link>
-                            <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
-                                <li><Link href="/servicev1" className="font-ks font-16 weight-500 color-1">Servics V1</Link></li>
-                                <li><Link href="/servicev2" className="font-ks font-16 weight-500 color">Servics V2</Link></li>
-                                <li><Link href="/serviceleft" className="font-ks font-16 weight-500 color"> Service Details
-                                    Left</Link></li>
-                                <li><Link href="/serviceright" className="font-ks font-16 weight-500 color">Service Details
-                                    Right</Link></li>
-                                <li><Link href="/servicemiddle" className="font-ks font-16 weight-500 color"> Single Service</Link>
-                                </li>
-                            </ul>
+                        <li>
+                            <Link href="/about" className="font-ks font-18 weight-600 color">About Us</Link>
                         </li>
-                        <li className="has-sub hash-has-sub">
-                            <span className={isActive.key == 3 ? "submenu-button submenu-opened" : "submenu-button"} onClick={() => handleToggle(3)}><em /></span>
-                            <Link href="/testimonials" className="font-ks font-16 weight-500 color">Case Studies </Link>
-                            <ul className="sub-menu" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                                <li><Link href="/casestudy1" className="font-ks font-16 weight-500 color-1">Case Study</Link></li>
-                                <li><Link href="/caseleft" className="font-ks font-16 weight-500 color">Case Details Left</Link></li>
-                                <li><Link href="/caseright" className="font-ks font-16 weight-500 color">Case Details Right</Link>
-                                </li>
-                                <li><Link href="/casemiddle" className="font-ks font-16 weight-500 color">Case Single </Link></li>
-                            </ul>
+                        <li>
+                            <Link href="/services" className="font-ks font-18 weight-600 color">Our Services</Link>
                         </li>
-                        <li className="has-sub hash-has-sub">
-                            <span className={isActive.key == 4 ? "submenu-button submenu-opened" : "submenu-button"} onClick={() => handleToggle(4)}><em /></span>
-                            <Link href="#" className="font-ks font-16 weight-500 color"> Our Blog</Link>
-                            <ul className="sub-menu" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
-                                <li><Link href="/blog2" className="font-ks font-16 weight-500 color-1">Blog One</Link></li>
-                                <li><Link href="/blog3" className="font-ks font-16 weight-500 color">Blog Two</Link></li>
-                                <li><Link href="/blogleft" className="font-ks font-16 weight-500 color">Blog Details Left</Link></li>
-                                <li><Link href="/blogright" className="font-ks font-16 weight-500 color">BLog Details Right</Link>
-                                </li>
-                                <li><Link href="/blogmiddle" className="font-ks font-16 weight-500 color"> Single Blog</Link></li>
-                            </ul>
+                        <li>
+                            <Link href="/faqs" className="font-ks font-18 weight-600 color">FAQs</Link>
                         </li>
-                        <li className="has-sub hash-has-sub">
-                            <span className={isActive.key == 5 ? "submenu-button submenu-opened" : "submenu-button"} onClick={() => handleToggle(5)}><em /></span>
-                            <Link href="#" className="font-ks font-16 weight-00 color">Pages</Link>
-                            <ul className="sub-menu" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
-                                <li><Link href="/testimonials" className="font-ks font-16 weight-500 color">Testimonials </Link></li>
-                                <li><Link href="/team" className="font-ks font-16 weight-500 color">Our Team</Link></li>
-                                <li><Link href="/team-details" className="font-ks font-16 weight-500 color">Single Team</Link></li>
-                                <li><Link href="/contact1" className="font-ks font-16 weight-500 color">Contact 1</Link></li>
-                                <li><Link href="/contact2" className="font-ks font-16 weight-500 color">Contact 2</Link></li>
-                            </ul>
+                        <li>
+                            <Link href="/contact1" className="font-ks font-18 weight-600 color">Contact</Link>
                         </li>
                     </ul>
                     <div className="allmobilesection">
-                        <Link href="#" className="font-ks font-18 lineh-18 weight-700 color mobilemenubtn">Get Started</Link>
+                        <Link href="/contact1" className="font-ks font-18 lineh-18 weight-700 color mobilemenubtn">Get Free Quote</Link>
                         <div className="single-footer single-footer-menu single-footer4">
                             <h3 className="font-ks font-24 lineh-24 weight-600 color margin-b margin-t24">Contact Info</h3>
                             <div className="footer4-contact-info">
@@ -130,7 +54,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                                         <img src="/assets/images/icons/phone5.svg" alt="" />
                                     </div>
                                     <div className="contact-info-text">
-                                        <Link href="/tel:+3(924)4596512" className="font-ks font-16 lineh-26 weight-500 color-21">+3(924)4596512</Link>
+                                        <Link href="/tel:+1-800-NEW-DECADE" className="font-ks font-16 lineh-26 weight-500 color-21">+1 (800) NEW-DECADE</Link>
                                     </div>
                                 </div>
                                 <div className="contact-info-single">
@@ -138,7 +62,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                                         <img src="/assets/images/icons/email4.svg" alt="" />
                                     </div>
                                     <div className="contact-info-text">
-                                        <Link href="/mailto:info@example.com" className="font-ks font-16 lineh-26 weight-500 color-21">info@example.com</Link>
+                                        <Link href="/mailto:info@newdecadeinsurance.com" className="font-ks font-16 lineh-26 weight-500 color-21">info@newdecadeinsurance.com</Link>
                                     </div>
                                 </div>
                                 <div className="single-footer single-footer-menu single-footer4">
@@ -148,8 +72,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                                             <img src="/assets/images/icons/location2.png" alt="" />
                                         </div>
                                         <div className="contact-info-text">
-                                            <Link href="/mailto:info@example.com" className="font-ks font-16 lineh-26 weight-500 color-21">55 East Birchwood
-                                                Ave.Brooklyn, <br /> New York 11201,United States</Link>
+                                            <Link href="#" className="font-ks font-16 lineh-26 weight-500 color-21">Houston, Texas <br /> United States</Link>
                                         </div>
                                     </div>
                                 </div>

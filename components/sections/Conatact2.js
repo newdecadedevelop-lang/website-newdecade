@@ -12,13 +12,9 @@ export default function Conatact2() {
                             <div className="row">
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration={800}>
                                     <div className="contact9-header margin-b30">
-                                        <span className="font-16 font-ks lineh-16 weight-500 colorhp9 d-inline-block margin-b24 insurance">Contact
-                                            Us</span>
-                                        <h1 className="font-lora font-44 lineh-54 weight-600 colorh9" data-aos="fade-right" data-aos-easing="linear" data-aos-duration={1000}>Contact Us Now For A Free
-                                            Consulation For Today.</h1>
-                                        <p className="font-ks fotn-16 lineh-26 weight-500 colorhp1 margin-t margin-b">We believe
-                                            that informed clients make better financial decisions. As part of our service, we'll
-                                            provide educational resources and workshops to help.</p>
+                                        <span className="font-16 font-ks lineh-16 weight-500 colorhp9 d-inline-block margin-b24 insurance">Contact Us</span>
+                                        <h1 className="font-lora font-44 lineh-54 weight-600 colorh9" data-aos="fade-right" data-aos-easing="linear" data-aos-duration={1000}>Get Your Free Insurance Quote Today</h1>
+                                        <p className="font-ks fotn-16 lineh-26 weight-500 colorhp1 margin-t margin-b">We believe that informed clients make better insurance decisions. Our experienced team is here to help you find the right coverage at the best price.</p>
                                         <div className="contact9-allinput">
                                             <div className="row align-items-center">
                                                 <div className="col-lg-6">
@@ -66,7 +62,7 @@ export default function Conatact2() {
                                 </div>
                                 <div className="col-lg-6" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration={1200}>
                                     <div className="contcat6-images margin-b30">
-                                        <img src="/assets/images/sectionimg/contact9img1.png" alt="" className="contact9auhtorimg" />
+                                        <img src="/assets/images/newdecade/newdecade_15.jpg" alt="" className="contact9auhtorimg" />
                                         <img src="/assets/images/elementor/Transparency1.png" alt="" className="trandparency1 aniamtion-key-1" />
                                     </div>
                                 </div>
@@ -79,8 +75,8 @@ export default function Conatact2() {
                                         </div>
                                         <div className="phone9textarea">
                                             <h1 className="font-lora font-20 lineh-20 weight-600 color-h9  margin-b20 d-inline-block ts">
-                                                Contact Info</h1> <br />
-                                            <Link href="/tel:123-456-7890" className="font-ks font-16 weight-500 colorhp1 lineh-16 ts">123-456-7890</Link>
+                                                Call Us Today</h1> <br />
+                                            <Link href="tel:18002505540" className="font-ks font-16 weight-500 colorhp1 lineh-16 ts">1-800-250-5540</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +88,7 @@ export default function Conatact2() {
                                         <div className="phone9textarea">
                                             <h1 className="font-lora font-20 lineh-20 weight-600 color-h9  margin-b20 d-inline-block ts">
                                                 Our Location</h1> <br />
-                                            <Link href="/tel:123-456-7890" className="font-ks font-16 weight-500 colorhp1 lineh-26 ts">1790 Hughes Landing
-                                                Boullevard, <br /> Suite 400, The TX 77380</Link>
+                                            <Link href="/contact" className="font-ks font-16 weight-500 colorhp1 lineh-26 ts">Serving All of <br /> California</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -104,9 +99,8 @@ export default function Conatact2() {
                                         </div>
                                         <div className="phone9textarea">
                                             <h1 className="font-lora font-20 lineh-20 weight-600 color-h9  margin-b20 d-inline-block ts">
-                                                Contact Info</h1> <br />
-                                            <Link href="/tel:123-456-7890" className="font-ks font-16 weight-500 colorhp1 lineh-16 ts">Monday - Friday : 10am
-                                                to 5pm</Link>
+                                                Office Hours</h1> <br />
+                                            <Link href="/contact" className="font-ks font-16 weight-500 colorhp1 lineh-16 ts">Mon-Fri: 9am-7pm<br />Sat: 9am-2pm</Link>
                                         </div>
                                     </div>
                                 </div>
