@@ -1,9 +1,10 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request) {
     try {
+        // Initialize Resend client at runtime to avoid build-time errors
+        const resend = new Resend(process.env.RESEND_API_KEY)
+
         const { name, email, phone, insuranceType, message, recaptchaToken } = await request.json()
 
         // Validate required fields
