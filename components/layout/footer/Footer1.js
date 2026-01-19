@@ -12,7 +12,7 @@ export default function Footer1() {
                                 <div className="row">
                                     <div className="col-lg-3">
                                         <div className="contact5-logo5-text">
-                                            <img src="/assets/images/logo/ND_LOGO_WHITE.png" alt="New Decade Insurance" />
+                                            <img src="/assets/images/logo/NDLOGO_WHITE.svg" alt="New Decade Insurance" />
                                             <p className="font-ks font-16 weight-500 lineh-26 color32 margin-t margin-b24">Protecting what matters most with comprehensive insurance solutions. From auto and motorcycle to business coverage, we're here to secure your future with competitive rates and exceptional service.</p>
                                             <div className="icon-social-links">
                                                 <ul>

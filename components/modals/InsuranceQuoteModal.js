@@ -744,7 +744,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                         >
                                             <div className="option-icon">
                                                 <Image
-                                                    src="/assets/images/car-icon.png"
+                                                    src="/assets/images/car-blue-003385.png"
                                                     alt="Auto Insurance"
                                                     width={60}
                                                     height={40}
@@ -773,7 +773,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                         >
                                             <div className="option-icon">
                                                 <Image
-                                                    src="/assets/images/motorcycle-icon.png"
+                                                    src="/assets/images/motorcycle-blue-003385.png"
                                                     alt="Motorcycle Insurance"
                                                     width={60}
                                                     height={40}
@@ -802,7 +802,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                         >
                                             <div className="option-icon">
                                                 <Image
-                                                    src="/assets/images/business-icon.png"
+                                                    src="/assets/images/business-blue-003385.png"
                                                     alt="Commercial Insurance"
                                                     width={60}
                                                     height={40}

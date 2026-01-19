@@ -1,6 +1,12 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
+import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
 
 export default function Header9({ scroll, isMobileMenu, handleMobileMenu }) {
+    const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+
     return (
         <>
             <header className="header about-bg d-none d-lg-block">
@@ -10,7 +16,7 @@ export default function Header9({ scroll, isMobileMenu, handleMobileMenu }) {
                             <div className="col-12">
                                 <div className="header-elements">
                                     <div className="site-logo">
-                                        <Link href="/"><img src="/assets/images/logo/ND_LOGO.png" alt="" /></Link>
+                                        <Link href="/"><img src="/assets/images/logo/NDLOGO.svg" alt="" style={{ maxWidth: '300px' }} /></Link>
                                     </div>
                                     <div className="main-menu-ex homepage5 homepage9">
                                         <ul>
@@ -25,7 +31,13 @@ export default function Header9({ scroll, isMobileMenu, handleMobileMenu }) {
                                     </div>
                                     <div className="contact-3 d-lg-block d-none">
                                         <div className="all-3-btn theme-btn">
-                                            <Link href="/contact1" className="font-16 font-ks weight-700 color lineh-16 consulting9">Get Free Quote<span><i className="fa-solid fa-arrow-right" /></span></Link>
+                                            <button
+                                                onClick={() => setIsQuoteModalOpen(true)}
+                                                className="font-16 font-ks weight-700 color lineh-16 consulting9"
+                                                style={{ background: '#003385', border: 'none', cursor: 'pointer' }}
+                                            >
+                                                Get Free Quote<span><i className="fa-solid fa-arrow-right" /></span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -35,6 +47,10 @@ export default function Header9({ scroll, isMobileMenu, handleMobileMenu }) {
                 </div>
             </header>
 
+            <InsuranceQuoteModal
+                isOpen={isQuoteModalOpen}
+                onClose={() => setIsQuoteModalOpen(false)}
+            />
         </>
     )
 }

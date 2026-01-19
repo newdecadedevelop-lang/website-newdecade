@@ -2,12 +2,15 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from "react"
+import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
 
 export default function FAQs() {
     const [isActive, setIsActive] = useState({
         status: false,
         key: 1,
     })
+
+    const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
 
     const handleToggle = (key) => {
         if (isActive.key === key) {
@@ -417,60 +420,6 @@ export default function FAQs() {
                         </div>
                     </div>
 
-                    {/* Still Have Questions CTA */}
-                    <div className="cta5-section-area section-padding4 bg_light_1">
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors72" />
-                        <div className="container">
-                            <div className="row align-items-center justify-content-center text-center">
-                                <div className="col-lg-8">
-                                    <h4 className="font-lora font-18 lineh-18 weight-600 color-h1 margin-b12">Still Have Questions?</h4>
-                                    <h1 className="font-lora font-48 lineh-52 weight-600 color-29 margin-b24">
-                                        We're Here to Help!
-                                    </h1>
-                                    <p className="font-ks font-16 lineh-26 weight-500 color-30 margin-b32">
-                                        Every situation is unique, and we're happy to answer any questions specific to your needs. Contact us today for personalized assistance.
-                                    </p>
-
-                                    <div className="row justify-content-center margin-b40">
-                                        <div className="col-lg-4 col-md-6 margin-b24">
-                                            <div className="contact-info-box text-center">
-                                                <div className="icon-wrapper margin-b12">
-                                                    <i className="fa-solid fa-phone" style={{ fontSize: '32px', color: '#0066CC' }} />
-                                                </div>
-                                                <h6 className="font-lora font-18 weight-600 color-29 margin-b8">Call Us</h6>
-                                                <Link href="tel:18002505540" className="font-ks font-16 weight-600 color-30">
-                                                    1-800-250-5540
-                                                </Link>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-6 margin-b24">
-                                            <div className="contact-info-box text-center">
-                                                <div className="icon-wrapper margin-b12">
-                                                    <i className="fa-solid fa-envelope" style={{ fontSize: '32px', color: '#0066CC' }} />
-                                                </div>
-                                                <h6 className="font-lora font-18 weight-600 color-29 margin-b8">Email Us</h6>
-                                                <Link href="mailto:info@allcentury.com" className="font-ks font-16 weight-600 color-30">
-                                                    info@allcentury.com
-                                                </Link>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-6 margin-b24">
-                                            <div className="contact-info-box text-center">
-                                                <div className="icon-wrapper margin-b12">
-                                                    <i className="fa-solid fa-location-dot" style={{ fontSize: '32px', color: '#0066CC' }} />
-                                                </div>
-                                                <h6 className="font-lora font-18 weight-600 color-29 margin-b8">Visit Us</h6>
-                                                <span className="font-ks font-16 weight-600 color-30">
-                                                    Serving All of California
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors73" />
-                    </div>
 
                     {/* Final CTA */}
                     <div className="cta5-section-area section-padding4">
@@ -490,10 +439,14 @@ export default function FAQs() {
                                 <div className="col-lg-2" />
                                 <div className="col-lg-4">
                                     <div className="cta5-btn5-sexction">
-                                        <Link href="/" className="theme6-btn6 bakgrnd5 font-ks lineh-16 weight-700 color font-16">
+                                        <button
+                                            onClick={() => setIsQuoteModalOpen(true)}
+                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
+                                            style={{ cursor: 'pointer' }}
+                                        >
                                             Get Free Quote
                                             <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
+                                        </button>
                                         <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
                                             Contact Us
                                             <span><i className="fa-solid fa-arrow-right" /></span>
@@ -506,6 +459,11 @@ export default function FAQs() {
                     </div>
                 </div>
             </Layout>
+
+            <InsuranceQuoteModal
+                isOpen={isQuoteModalOpen}
+                onClose={() => setIsQuoteModalOpen(false)}
+            />
         </>
     )
 }

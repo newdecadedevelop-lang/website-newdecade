@@ -1,7 +1,13 @@
+"use client"
+
+import { useState } from "react"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
 
 export default function Home() {
+    const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Our Insurance Services">
@@ -39,7 +45,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_15_250x210.jpg" alt="Personal Auto Insurance" />
+                                                    <img src="/assets/images/newdecade/newdecade_15.jpg" alt="Personal Auto Insurance" />
                                                 </div>
                                             </div>
                                         </div>
@@ -67,7 +73,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_29_250x210.jpg" alt="Motorcycle Insurance" />
+                                                    <img src="/assets/images/newdecade/newdecade_29.jpg" alt="Motorcycle Insurance" />
                                                 </div>
                                             </div>
                                         </div>
@@ -95,7 +101,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_19_250x210.jpg" alt="Commercial Insurance" />
+                                                    <img src="/assets/images/newdecade/newdecade_19.jpg" alt="Commercial Insurance" />
                                                 </div>
                                             </div>
                                         </div>
@@ -123,7 +129,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_20_250x210.jpg" alt="SR-22 Insurance" />
+                                                    <img src="/assets/images/newdecade/newdecade_20.jpg" alt="SR-22 Insurance" />
                                                 </div>
                                             </div>
                                         </div>
@@ -151,7 +157,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_18_250x210.jpg" alt="Workers' Compensation" />
+                                                    <img src="/assets/images/newdecade/newdecade_18.jpg" alt="Workers' Compensation" />
                                                 </div>
                                             </div>
                                         </div>
@@ -179,7 +185,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_21_250x210.jpg" alt="General Liability" />
+                                                    <img src="/assets/images/newdecade/newdecade_21.jpg" alt="General Liability" />
                                                 </div>
                                             </div>
                                         </div>
@@ -236,10 +242,14 @@ export default function Home() {
                                 <div className="col-lg-2" />
                                 <div className="col-lg-4">
                                     <div className="cta5-btn5-sexction">
-                                        <Link href="/" className="theme6-btn6 bakgrnd5 font-ks lineh-16 weight-700 color font-16">
+                                        <button
+                                            onClick={() => setIsQuoteModalOpen(true)}
+                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
+                                            style={{ cursor: 'pointer' }}
+                                        >
                                             Get Free Quote
                                             <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
+                                        </button>
                                         <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
                                             Contact Us
                                             <span><i className="fa-solid fa-arrow-right" /></span>
@@ -253,6 +263,11 @@ export default function Home() {
                     {/*===== CTA END=======*/}
                 </div>
             </Layout>
+
+            <InsuranceQuoteModal
+                isOpen={isQuoteModalOpen}
+                onClose={() => setIsQuoteModalOpen(false)}
+            />
         </>
     )
 }

@@ -17,7 +17,7 @@ export default function Cta9() {
     return (
         <>
 
-            <div className="cta9-section-area section-padding4">
+            <div className="cta5-section-area section-padding4">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
@@ -29,7 +29,7 @@ export default function Cta9() {
                         <div className="col-lg-1" />
                         <div className="col-lg-5">
                             <div className="cta9-btnarea">
-                                <button onClick={handleGetQuote} className="font-16 weight-700 font-ks colorhp9 contactcta9" style={{ border: 'none', cursor: 'pointer', background: 'transparent', padding: 0 }}>Get a Free Quote <span className="ml1"><i className="fa-solid fa-arrow-right" /></span></button>
+                                <button onClick={handleGetQuote} className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5" style={{ border: 'none', cursor: 'pointer', background: 'transparent', padding: 0 }}>Get a Free Quote <span className="ml1"><i className="fa-solid fa-arrow-right" /></span></button>
                                 <Link href="/contact" className="font-16 weight-700 font-ks color contactcta10">Contact Us <span className="ml1"><i className="fa-solid fa-arrow-right" /></span></Link>
                             </div>
                         </div>

@@ -1,8 +1,10 @@
 'use client'
+import { useState } from "react"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import ViewMoreServices from "@/components/sections/services/ViewMoreServices"
 import FAQ from "@/components/sections/services/FAQ"
+import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
 
 const faqs = [
     {
@@ -40,6 +42,8 @@ const faqs = [
 ]
 
 export default function PersonalAutoInsurance() {
+    const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Personal Auto Insurance">
@@ -190,10 +194,14 @@ export default function PersonalAutoInsurance() {
                                 <div className="col-lg-2" />
                                 <div className="col-lg-4">
                                     <div className="cta5-btn5-sexction">
-                                        <Link href="/" className="theme6-btn6 bakgrnd5 font-ks lineh-16 weight-700 color font-16">
+                                        <button
+                                            onClick={() => setIsQuoteModalOpen(true)}
+                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
+                                            style={{ cursor: 'pointer' }}
+                                        >
                                             Get Free Quote
                                             <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
+                                        </button>
                                         <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
                                             Contact Us
                                             <span><i className="fa-solid fa-arrow-right" /></span>
@@ -206,6 +214,11 @@ export default function PersonalAutoInsurance() {
                     </div>
                 </div>
             </Layout>
+
+            <InsuranceQuoteModal
+                isOpen={isQuoteModalOpen}
+                onClose={() => setIsQuoteModalOpen(false)}
+            />
         </>
     )
 }

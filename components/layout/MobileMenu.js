@@ -8,7 +8,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                     <div className="col-12">
                         <div className="mobile-header-elements">
                             <div className="mobile-logo">
-                                <Link href="/"><img src="/assets/images/logo/ND_LOGO_WHITE.png" alt="New Decade Insurance" /></Link>
+                                <Link href="/"><img src="/assets/images/logo/NDLOGO_WHITE.svg" alt="New Decade Insurance" style={{ width: '300px', height: 'auto' }} /></Link>
                             </div>
                             <div className="mobile-nav-icon dots-menu" onClick={handleMobileMenu}>
                                 <i className="fa-solid fa-bars" />
@@ -20,7 +20,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
             <div className={`mobile-sidebar ${isMobileMenu ? "mobile-menu-active" : ""}`}>
                 <div className="logoicons-area">
                     <div className="logos">
-                        <img src="/assets/images/logo/ND_LOGO_WHITE.png" alt="New Decade Insurance" />
+                        <img src="/assets/images/logo/NDLOGO_WHITE.svg" alt="New Decade Insurance" style={{ width: '300px', height: 'auto' }} />
                     </div>
                     <div className="menu-close" onClick={handleMobileMenu}>
                         <i className="fa-solid fa-xmark" />

@@ -4535,6 +4535,8 @@ a.laearnmore2:hover span svg{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 250px;
+  margin-right: 15px;
 }
 
 .service3-imag1 {
@@ -9596,9 +9598,9 @@ line-height: 16px;
 }
 button.contcat5 {
   justify-content: right;
-  border-radius: 2px;
-  background: var(--secondary-color, #414141);
-  padding: 18px 22px;
+  border-radius: 2px !important;
+  background: var(--secondary-color, #003385) !important;
+  padding: 18px 22px !important;
   border: none;
   display: inline-block;
   transition: all .4s ease-in-out;
@@ -9609,8 +9611,8 @@ button.contcat5 span svg {
 }
 
 button.contcat5:hover {
-  background: #fff;
-  color: #000;
+  background: #fff !important;
+  color: #000 !important;
   transition: all .4s ease-in-out;
 }
 .contact5-btn5 {

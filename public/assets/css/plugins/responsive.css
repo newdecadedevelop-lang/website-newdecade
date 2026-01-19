@@ -1300,6 +1300,7 @@ img.growth1 {
     .service3-imag1 {
         position: relative;
         right: 0;
+        text-align: center;
     }
 
 
@@ -2920,6 +2921,7 @@ a.contact3 {
 .service3-imag1 {
     position: relative;
     right: 0;
+    text-align: center;
 }
 .client2-textarea {
     margin-bottom: 30px;

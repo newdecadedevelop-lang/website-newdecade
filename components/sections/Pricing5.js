@@ -1,6 +1,20 @@
+"use client"
+
 import Link from "next/link"
+import { useState } from "react"
+import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
 
 export default function Pricing5() {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const handleGetQuote = () => {
+        setIsModalOpen(true)
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false)
+    }
+
     return (
         <>
 
@@ -25,9 +39,13 @@ export default function Pricing5() {
                                         <i className="flaticon-insurance" style={{fontSize: '48px', color: '#0066CC'}} />
                                     </div>
                                     <div className="title_22" style={{marginBottom: '15px'}}>
-                                        <Link href="#" className="font-lora font-24 weight-600 color-h9">
+                                        <button
+                                            onClick={handleGetQuote}
+                                            className="font-lora font-24 weight-600 color-h9"
+                                            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, textDecoration: 'none' }}
+                                        >
                                             Get a Free Quote
-                                        </Link>
+                                        </button>
                                     </div>
                                     <p className="font-ks font-16 lineh-26 weight-500 colorhp1">Tell us about your insurance needs. We work with multiple carriers to find you the best coverage at competitive rates.</p>
                                 </div>
@@ -72,6 +90,8 @@ export default function Pricing5() {
                     </div>
                 </div>
             </div>
+
+            <InsuranceQuoteModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </>
     )
 }

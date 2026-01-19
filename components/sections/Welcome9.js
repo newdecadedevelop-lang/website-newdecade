@@ -9,19 +9,19 @@ const insuranceOptions = [
     {
         id: 'auto',
         title: 'Auto Insurance',
-        icon: '/assets/images/car-icon.png',
+        icon: '/assets/images/car-blue-003385.png',
         description: 'Protect your vehicle'
     },
     {
         id: 'motorcycle',
         title: 'Motorcycle Insurance',
-        icon: '/assets/images/motorcycle-icon.png',
+        icon: '/assets/images/motorcycle-blue-003385.png',
         description: 'Coverage for your two-wheeler'
     },
     {
         id: 'commercial',
         title: 'Commercial Insurance',
-        icon: '/assets/images/business-icon.png',
+        icon: '/assets/images/business-blue-003385.png',
         description: 'Coverage for your business'
     }
 ]
@@ -107,7 +107,13 @@ export default function Welcome9() {
                                 <span className="font-16 font-ks lineh-16 weight-500 colorhp9 d-inline-block margin-b24 insurance">Welcome to New Decade Insurance</span>
                                 <h1 className="font-lora font-48 lineh-54 weight-600 colorh9 margin-b24" data-aos="fade-left" data-aos-duration={1200}>For Today, Tomorrow, And Decades To Come</h1>
                                 <p className="font-16 font-ks weight-500 color-p2 lineh-26">Your Full-Service Personal, Commercial & Business Insurance Specialists. <br />20+ years of experience serving California drivers and businesses. <br />We've got you covered - all drivers welcome!</p>
-                                <Link href="/contact" className="font-16 font-ks weight-700 color lineh-16 consulting10">Get Free Quote <span><i className="fa-solid fa-arrow-right" /></span></Link>
+                                <button
+                                    onClick={handleGetQuote}
+                                    className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
+                                    style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+                                >
+                                    Get Free Quote <span><i className="fa-solid fa-arrow-right" /></span>
+                                </button>
                             </div>
                         </div>
 

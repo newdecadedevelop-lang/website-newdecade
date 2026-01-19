@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
+import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
 
 // Validation schema
 const contactSchema = yup.object({
@@ -53,6 +54,7 @@ export default function Home() {
 
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [submitStatus, setSubmitStatus] = useState(null)
+    const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
 
     const {
         register,
@@ -163,7 +165,7 @@ export default function Home() {
                                             </div>
                                             <div className="phone7-text">
                                                 <p className="font-16 lineh-16 weight-500 font-ks color-30 margin-b">Send us an Email</p>
-                                                <Link href="/mailto:info@newdecadeinsurance.com" className="font-lora font-24 weight-700 lineh-24 color-29">info@newdecadeinsurance.com</Link>
+                                                <Link href="/mailto:info@newdecadeinsurance.com" className="font-lora font-24 weight-700 lineh-24 color-29">info@newdecade.com</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -461,12 +463,16 @@ export default function Home() {
                                 <div className="col-lg-2" />
                                 <div className="col-lg-4">
                                     <div className="cta5-btn5-sexction">
-                                        <Link href="/contact1" className="theme6-btn6 bakgrnd5 font-ks lineh-16 weight-700 color font-16">
+                                        <button
+                                            onClick={() => setIsQuoteModalOpen(true)}
+                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
+                                            style={{ cursor: 'pointer' }}
+                                        >
                                             Get Free Quote
                                             <span>
                                                 <i className="fa-solid fa-arrow-right" />
                                             </span>
-                                        </Link>
+                                        </button>
                                         <Link href="/about" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
                                             Learn More
                                             <span>
@@ -482,6 +488,11 @@ export default function Home() {
                 </div>
 
             </Layout>
+
+            <InsuranceQuoteModal
+                isOpen={isQuoteModalOpen}
+                onClose={() => setIsQuoteModalOpen(false)}
+            />
         </>
     )
 }
