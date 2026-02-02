@@ -22,8 +22,8 @@ export default function Company3() {
                                     <img src="/assets/images/icons/exporticon1.svg" alt="" className="ts" />
                                     <h1 className="title-head font-42 weight-600 lineh-40 font-lora color-21">01</h1>
                                 </div>
-                                <Link href="/about" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">Bilingual Service</Link>
-                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">We speak English and Spanish to serve you better. Hablamos Español con orgullo.</p>
+                                <Link href="/about" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">Multi-State Coverage</Link>
+                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">Licensed and serving California, Texas, Florida, and Arizona. Protecting businesses across the nation.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration={1200}>
@@ -32,8 +32,8 @@ export default function Company3() {
                                     <img src="/assets/images/icons/exporticon2.png" alt="" className="ts" />
                                     <h1 className="title-head font-42 weight-600 lineh-40 font-lora color-21">02</h1>
                                 </div>
-                                <Link href="/services/personal-auto" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">All Drivers Welcome</Link>
-                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">Coverage for drivers with tickets or accidents. Everyone deserves a second chance.</p>
+                                <Link href="/services" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">Commercial Specialists</Link>
+                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">From fleet coverage to general liability, we protect your business with expert commercial insurance solutions.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration={1400}>
@@ -42,8 +42,8 @@ export default function Company3() {
                                     <img src="/assets/images/icons/exporticon3.svg" alt="" className="ts" />
                                     <h1 className="title-head font-42 weight-600 lineh-40 font-lora color-21">03</h1>
                                 </div>
-                                <Link href="/contact" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">Personal Attention</Link>
-                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">Face-to-face service with a caring agent. We build long-term relationships.</p>
+                                <Link href="/contact" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">Tech-Forward Solutions</Link>
+                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">Digital policy management, instant quotes, and 24/7 access. Modern insurance for the modern business.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration={1600}>
@@ -52,8 +52,8 @@ export default function Company3() {
                                     <img src="/assets/images/icons/exporticon1.svg" alt="" className="ts" />
                                     <h1 className="title-head font-42 weight-600 lineh-40 font-lora color-21">04</h1>
                                 </div>
-                                <Link href="/servicev2" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">Best Value</Link>
-                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">Multiple carriers to find you the best rates. Over 20 years of experience.</p>
+                                <Link href="/about" className="font-lora font-24 lineh-26 ts weight-600 color-h9 d-inline-block margin-b">20+ Years of Trust</Link>
+                                <p className="font-ks font-16 lineh-26 weight-500 colorhp1 ts">Established in 2005, serving 150K+ clients with unwavering dedication and 100% commitment to client advocacy.</p>
                             </div>
                         </div>
                     </div>

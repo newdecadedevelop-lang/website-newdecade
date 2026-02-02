@@ -47,7 +47,7 @@ export default function Pricing5() {
                                             Get a Free Quote
                                         </button>
                                     </div>
-                                    <p className="font-ks font-16 lineh-26 weight-500 colorhp1">Tell us about your insurance needs. We work with multiple carriers to find you the best coverage at competitive rates.</p>
+                                    <p className="font-ks font-16 lineh-26 weight-500 colorhp1">Tell us about your business or personal insurance needs. Our commercial specialists work with multiple carriers across CA, TX, FL, and AZ to find you the best coverage.</p>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ export default function Pricing5() {
                                             Review Your Options
                                         </Link>
                                     </div>
-                                    <p className="font-ks font-16 lineh-26 weight-500 colorhp1">Our bilingual team will walk you through your coverage options and answer all your questions in English or Spanish.</p>
+                                    <p className="font-ks font-16 lineh-26 weight-500 colorhp1">Our experienced team will walk you through your coverage options, from fleet insurance to workers' comp, and answer all your questions with expert guidance.</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ export default function Pricing5() {
                                             Secure Your Coverage
                                         </Link>
                                     </div>
-                                    <p className="font-ks font-16 lineh-26 weight-500 colorhp1">Once you choose the right policy, we'll handle the paperwork and get you protected quickly. Same-day coverage available.</p>
+                                    <p className="font-ks font-16 lineh-26 weight-500 colorhp1">Once you choose the right policy, we'll handle the paperwork and get you protected quickly. Fast COI turnaround and digital policy management available.</p>
                                 </div>
                             </div>
                         </div>

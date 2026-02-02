@@ -4,6 +4,7 @@ import { useState } from "react"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
+import Cta9 from "@/components/sections/Cta9";
 
 export default function Home() {
     const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
@@ -15,121 +16,70 @@ export default function Home() {
                     <div className="servicev1-section-area section-padding5">
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-7 m-auto">
+                                <div className="col-lg-9 m-auto">
                                     <div className="servicev1-textarea margin-b60 text-center">
-                                        <h1 className="font-48 font-lora weight-600 color-29 lineh-56">
-                                            Comprehensive Insurance Solutions for California
+                                        <h1 className="font-48 font-lora weight-600 color-29 lineh-56 margin-b20">
+                                            Multi-State Insurance Excellence: Protecting What Matters Most
                                         </h1>
+                                        <p className="font-ks font-16 lineh-26 weight-500 color-30">
+                                            At New Decade, we don't just provide policies; we provide comprehensive protection for businesses and individuals across California, Texas, Florida, and Arizona. With 20+ years of experience and a tech-forward approach, we deliver commercial-focused coverage designed for your success.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
-                                {/* Personal Auto Insurance */}
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="service3-boxarea margin-b30 bgservice2">
-                                        <div className="row">
-                                            <div className="col-lg-6">
-                                                <div className="service3-text2">
-                                                    <Link href="/services/personal-auto">
-                                                        <h1 className="font-lora font-22 lineh-24 color-29 weight-600 margin-b">
-                                                            Personal Auto Insurance
-                                                        </h1>
-                                                    </Link>
-                                                    <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                        Full coverage and liability options for all drivers. We welcome everyone, including those with tickets or accidents.
-                                                    </p>
-                                                    <Link href="/services/personal-auto" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
-                                                        Learn More <span><i className="fa-solid fa-arrow-right" /></span>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6">
-                                                <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_15.jpg" alt="Personal Auto Insurance" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Motorcycle Insurance */}
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="service3-boxarea margin-b30 bgservice2">
-                                        <div className="row">
-                                            <div className="col-lg-6">
-                                                <div className="service3-text2">
-                                                    <Link href="/services/motorcycle">
-                                                        <h1 className="font-lora font-22 lineh-24 color-29 weight-600 margin-b">
-                                                            Motorcycle Insurance
-                                                        </h1>
-                                                    </Link>
-                                                    <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                        Comprehensive coverage for your two-wheeled adventures. Protect your bike and yourself on California roads.
-                                                    </p>
-                                                    <Link href="/services/motorcycle" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
-                                                        Learn More <span><i className="fa-solid fa-arrow-right" /></span>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6">
-                                                <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_29.jpg" alt="Motorcycle Insurance" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Commercial Insurance */}
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="service3-boxarea margin-b30 bgservice2">
+                                {/* Commercial Auto / Fleet Coverage */}
+                                <div className="col-lg-6 col-md-6" style={{ marginBottom: '50px' }}>
+                                    <div className="service3-boxarea bgservice2" style={{ height: '100%', minHeight: '380px' }}>
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="service3-text2">
                                                     <Link href="/services/commercial">
                                                         <h1 className="font-lora font-22 lineh-24 color-29 weight-600 margin-b">
-                                                            Commercial Insurance
+                                                            Commercial Auto / Fleet Coverage
                                                         </h1>
                                                     </Link>
+                                                    <p className="font-ks font-16 lineh-26 weight-600 color-29 margin-b12">Our #1 Specialty: Multi-State Fleet Protection</p>
                                                     <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                        Protection for restaurants, bars, retail shops, offices, and other businesses throughout California.
+                                                        From single commercial vehicles to multi-state fleet operations across CA, TX, FL, and AZ. Comprehensive coverage for delivery services, logistics companies, and business transportation. 20+ years protecting commercial drivers.
                                                     </p>
                                                     <Link href="/services/commercial" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
                                                         Learn More <span><i className="fa-solid fa-arrow-right" /></span>
                                                     </Link>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-6" style={{ marginTop: '30px' }}>
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_19.jpg" alt="Commercial Insurance" />
+                                                    <img src="/assets/images/newdecade/newdecade_44.jpg" alt="Commercial Fleet Coverage" />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                {/* SR-22 & High Risk */}
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="service3-boxarea margin-b30 bgservice2">
+                                {/* General Liability */}
+                                <div className="col-lg-6 col-md-6" style={{ marginBottom: '50px' }}>
+                                    <div className="service3-boxarea bgservice2" style={{ height: '100%', minHeight: '380px' }}>
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="service3-text2">
-                                                    <Link href="/services/sr22">
+                                                    <Link href="/services/general-liability">
                                                         <h1 className="font-lora font-22 lineh-24 color-29 weight-600 margin-b">
-                                                            SR-22 & High Risk
+                                                            General Liability Insurance
                                                         </h1>
                                                     </Link>
+                                                    <p className="font-ks font-16 lineh-26 weight-600 color-29 margin-b12">Essential Business Protection Across All States</p>
                                                     <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                        Specialized coverage for drivers who need SR-22 filing. We help you get back on the road legally.
+                                                        Protect your business against claims of bodily injury, property damage, and liability exposures across CA, TX, FL, and AZ. Fast COI turnaround, 100% client advocacy, and comprehensive coverage for 50+ industries.
                                                     </p>
-                                                    <Link href="/services/sr22" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
+                                                    <Link href="/services/general-liability" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
                                                         Learn More <span><i className="fa-solid fa-arrow-right" /></span>
                                                     </Link>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-6">
+                                            <div className="col-lg-6" style={{ marginTop: '30px' }}>
                                                 <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_20.jpg" alt="SR-22 Insurance" />
+                                                    <img src="/assets/images/newdecade/newdecade_48.jpg" alt="General Liability Insurance" />
                                                 </div>
                                             </div>
                                         </div>
@@ -137,8 +87,8 @@ export default function Home() {
                                 </div>
 
                                 {/* Workers' Compensation */}
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="service3-boxarea margin-b30 bgservice2">
+                                <div className="col-lg-6 col-md-6" style={{ marginBottom: '50px' }}>
+                                    <div className="service3-boxarea bgservice2" style={{ height: '100%', minHeight: '380px' }}>
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="service3-text2">
@@ -147,45 +97,105 @@ export default function Home() {
                                                             Workers' Compensation
                                                         </h1>
                                                     </Link>
+                                                    <p className="font-ks font-16 lineh-26 weight-600 color-29 margin-b12">Multi-State Workers' Comp Experts</p>
                                                     <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                        Essential protection for your employees and business. Comprehensive coverage to meet California requirements.
+                                                        Stay compliant across CA, TX, FL, and AZ while protecting your team. Fast COI turnaround, digital policy management, and expert guidance for multi-state operations. Tech-forward approach streamlines compliance requirements.
                                                     </p>
                                                     <Link href="/services/workers-comp" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
                                                         Learn More <span><i className="fa-solid fa-arrow-right" /></span>
                                                     </Link>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-6">
-                                                <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_18.jpg" alt="Workers' Compensation" />
+                                            <div className="col-lg-6" style={{ marginTop: '30px' }}>
+                                                <div className="service3-imag1" >
+                                                    <img src="/assets/images/newdecade/newdecade_45.jpg" alt="Workers' Compensation"  />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                {/* General Liability */}
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="service3-boxarea margin-b30 bgservice2">
+                                {/* Cargo Insurance */}
+                                <div className="col-lg-6 col-md-6" style={{ marginBottom: '50px' }}>
+                                    <div className="service3-boxarea bgservice2" style={{ height: '100%', minHeight: '380px' }}>
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="service3-text2">
-                                                    <Link href="/services/general-liability">
+                                                    <Link href="/services/commercial">
                                                         <h1 className="font-lora font-22 lineh-24 color-29 weight-600 margin-b">
-                                                            General Liability
+                                                            Cargo Insurance
                                                         </h1>
                                                     </Link>
+                                                    <p className="font-ks font-16 lineh-26 weight-600 color-29 margin-b12">Protect Your Freight & Logistics Operations</p>
                                                     <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                        Protect your business from claims and lawsuits. Coverage for bodily injury, property damage, and more.
+                                                        Comprehensive cargo protection for goods in transit across CA, TX, FL, and AZ. Coverage for trucking companies, freight forwarders, and logistics operations. Specialized expertise in commercial transportation insurance.
                                                     </p>
-                                                    <Link href="/services/general-liability" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
+                                                    <Link href="/services/commercial" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
                                                         Learn More <span><i className="fa-solid fa-arrow-right" /></span>
                                                     </Link>
                                                 </div>
                                             </div>
+                                            <div className="col-lg-6" style={{ marginTop: '30px' }}>
+                                                <div className="service3-imag1" >
+                                                    <img src="/assets/images/newdecade/newdecade_46.jpg" alt="Cargo Insurance"  />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Personal Auto Insurance */}
+                                <div className="col-lg-6 col-md-6" style={{ marginBottom: '50px' }}>
+                                    <div className="service3-boxarea bgservice2" style={{ height: '100%', minHeight: '380px' }}>
+                                        <div className="row">
                                             <div className="col-lg-6">
-                                                <div className="service3-imag1">
-                                                    <img src="/assets/images/newdecade/newdecade_21.jpg" alt="General Liability" />
+                                                <div className="service3-text2">
+                                                    <Link href="/services/personal-auto">
+                                                        <h1 className="font-lora font-22 lineh-24 color-29 weight-600 margin-b">
+                                                            Personal Auto Insurance
+                                                        </h1>
+                                                    </Link>
+                                                    <p className="font-ks font-16 lineh-26 weight-600 color-29 margin-b12">Comprehensive Coverage for Personal Vehicles</p>
+                                                    <p className="font-ks font-16 lineh-26 weight-500 color-30">
+                                                        From single vehicles to multi-car households across CA, TX, FL, and AZ. Competitive rates for all drivers. While our specialty is commercial insurance, we provide expert personal auto coverage with the same dedication and service.
+                                                    </p>
+                                                    <Link href="/services/personal-auto" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
+                                                        Learn More <span><i className="fa-solid fa-arrow-right" /></span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6" style={{ marginTop: '30px' }}>
+                                                <div className="service3-imag1" >
+                                                    <img src="/assets/images/newdecade/newdecade_15.jpg" alt="Personal Auto Insurance"  />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Motorcycle Insurance */}
+                                <div className="col-lg-6 col-md-6" style={{ marginBottom: '50px' }}>
+                                    <div className="service3-boxarea bgservice2" style={{ height: '100%', minHeight: '380px' }}>
+                                        <div className="row">
+                                            <div className="col-lg-6">
+                                                <div className="service3-text2">
+                                                    <Link href="/services/motorcycle">
+                                                        <h1 className="font-lora font-22 lineh-24 color-29 weight-600 margin-b">
+                                                            Motorcycle Insurance
+                                                        </h1>
+                                                    </Link>
+                                                    <p className="font-ks font-16 lineh-26 weight-600 color-29 margin-b12">Multi-State Two-Wheeler Protection</p>
+                                                    <p className="font-ks font-16 lineh-26 weight-500 color-30">
+                                                        Whether riding the Pacific Coast Highway or exploring Texas, Florida, or Arizona roads, protect your motorcycle and gear with comprehensive coverage across all four states we serve. Expert protection for enthusiasts.
+                                                    </p>
+                                                    <Link href="/services/motorcycle" className="font-ks font-16 lineh-16 color-29 weight-700 margin-t d-inline-block laearnmore2">
+                                                        Learn More <span><i className="fa-solid fa-arrow-right" /></span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6" style={{ marginTop: '30px' }}>
+                                                <div className="service3-imag1" >
+                                                    <img src="/assets/images/newdecade/newdecade_29.jpg" alt="Motorcycle Insurance"  />
                                                 </div>
                                             </div>
                                         </div>
@@ -224,43 +234,7 @@ export default function Home() {
                     </div>
                     {/*===== SERVCEV2 END=======*/}
 
-                    {/*===== CTA STARST=======*/}
-                    <div className="cta5-section-area section-padding4">
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors72" />
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6">
-                                    <div className="cta5-auhtor6-area">
-                                        <h1 className="font-lora font-48 lineh-52 color weight-600 margin-b text-capitalize">
-                                            Get Your Free Insurance Quote Today
-                                        </h1>
-                                        <p className="font-ks font-16 lineh-26 weight-500 color-21">
-                                            We believe that informed clients make better insurance decisions. Our experienced team is here to help you find the right coverage at the best price.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-2" />
-                                <div className="col-lg-4">
-                                    <div className="cta5-btn5-sexction">
-                                        <button
-                                            onClick={() => setIsQuoteModalOpen(true)}
-                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
-                                            style={{ cursor: 'pointer' }}
-                                        >
-                                            Get Free Quote
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </button>
-                                        <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
-                                            Contact Us
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors73" />
-                    </div>
-                    {/*===== CTA END=======*/}
+                    <Cta9 />
                 </div>
             </Layout>
 

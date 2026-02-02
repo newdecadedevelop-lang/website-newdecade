@@ -1,6 +1,10 @@
 import Link from "next/link"
+import { useState } from "react"
+import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
 
 export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
+    const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+
     return (
         <>
             <div className="mobile-header mobile-header-4 d-block d-lg-none homepagesmall">
@@ -41,11 +45,23 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                             <Link href="/faqs" className="font-ks font-18 weight-600 color">FAQs</Link>
                         </li>
                         <li>
-                            <Link href="/contact1" className="font-ks font-18 weight-600 color">Contact</Link>
+                            <Link href="/contact" className="font-ks font-18 weight-600 color">Contact</Link>
                         </li>
                     </ul>
                     <div className="allmobilesection">
-                        <Link href="/contact1" className="font-ks font-18 lineh-18 weight-700 color mobilemenubtn">Get Free Quote</Link>
+                        <button
+                            onClick={() => setIsQuoteModalOpen(true)}
+                            className="font-ks font-18 lineh-18 weight-700 color mobilemenubtn"
+                            style={{
+                                background: 'transparent',
+                                border: 'none',
+                                cursor: 'pointer',
+                                width: '100%',
+                                textAlign: 'left'
+                            }}
+                        >
+                            Get Free Quote
+                        </button>
                         <div className="single-footer single-footer-menu single-footer4">
                             <h3 className="font-ks font-24 lineh-24 weight-600 color margin-b margin-t24">Contact Info</h3>
                             <div className="footer4-contact-info">
@@ -54,7 +70,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                                         <img src="/assets/images/icons/phone5.svg" alt="" />
                                     </div>
                                     <div className="contact-info-text">
-                                        <Link href="/tel:+1-800-NEW-DECADE" className="font-ks font-16 lineh-26 weight-500 color-21">+1 (800) NEW-DECADE</Link>
+                                        <Link href="/tel:888-585-9910" className="font-ks font-16 lineh-26 weight-500 color-21">888-585-9910</Link>
                                     </div>
                                 </div>
                                 <div className="contact-info-single">
@@ -72,7 +88,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                                             <img src="/assets/images/icons/location2.png" alt="" />
                                         </div>
                                         <div className="contact-info-text">
-                                            <Link href="#" className="font-ks font-16 lineh-26 weight-500 color-21">Houston, Texas <br /> United States</Link>
+                                            <Link href="#" className="font-ks font-16 lineh-26 weight-500 color-21">2215 S. Vermont Ave Unit 103<br />Los Angeles, CA 90007</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -114,6 +130,11 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                     </div>
                 </div>
             </div>
+
+            <InsuranceQuoteModal
+                isOpen={isQuoteModalOpen}
+                onClose={() => setIsQuoteModalOpen(false)}
+            />
         </>
     )
 }

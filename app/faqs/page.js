@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from "react"
 import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
+import Cta9 from "@/components/sections/Cta9"
 
 export default function FAQs() {
     const [isActive, setIsActive] = useState({
@@ -40,7 +41,7 @@ export default function FAQs() {
                                             Frequently Asked Questions
                                         </h1>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30 margin-b32">
-                                            Have questions about our insurance services? We're here to help. Find answers to the most common questions below, or contact us directly for personalized assistance.
+                                            Have questions about our multi-state insurance services? With 20+ years of experience serving California, Texas, Florida, and Arizona, we're here to help. Find answers to the most common questions below, or contact us directly for personalized assistance.
                                         </p>
                                         <div className="theme-btn-area">
                                             <Link href="/contact" className="theme6-btn6 bakgrnd5 font-ks lineh-16 weight-700 color font-16">
@@ -64,7 +65,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                We've been serving Southern California since 2005—over 20 years of experience helping drivers find the right coverage. We've grown from a small startup to operating two high-performing offices in the Greater LA area, maintaining our commitment to personalized service.
+                                                                Founded in 2005, we have over 20 years of experience serving businesses and individuals across California, Texas, Florida, and Arizona. We've grown from a small startup to a multi-state commercial insurance powerhouse, serving 150K+ clients across 50+ industries while maintaining our commitment to 100% client advocacy.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -79,7 +80,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                ¡Sí! We're fully bilingual and offer all our services in both English and Spanish. This is especially important to us as we primarily serve the Hispanic community. Hablamos Español con orgullo.
+                                                                ¡Sí! We're fully bilingual and offer all our services in both English and Spanish across all four states we serve (CA, TX, FL, AZ). This is especially important to us as we primarily serve the Hispanic community. Hablamos Español con orgullo.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -94,7 +95,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                We are proud to serve all of California! We have two convenient office locations: Los Angeles (2215 S. Vermont Ave) and Panorama City (14417 Roscoe Blvd). As a licensed insurance broker throughout California, we provide coverage and service to clients statewide.
+                                                                We are proud to serve California, Texas, Florida, and Arizona! Our headquarters is in Los Angeles (2215 S. Vermont Ave Unit 103, Los Angeles, CA 90007). As a licensed insurance broker across all four states, we provide comprehensive multi-state coverage with tech-forward digital policy management and fast COI turnaround for commercial clients.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -109,7 +110,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                Yes, we're an independent insurance brokerage. This means we work with multiple top-rated insurance carriers to find you the best coverage at the most competitive rates—we're not limited to just one company.
+                                                                Yes, we're an independent insurance brokerage specializing in commercial insurance. This means we work with multiple top-rated insurance carriers across CA, TX, FL, and AZ to find you the best coverage at the most competitive rates—we're not limited to just one company. With 100% commitment to client advocacy, we always put your interests first.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -124,7 +125,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                Getting a quote is easy! Call toll-free 1-800-250-5540, or contact our offices: Panorama City (818) 482-2888 or Los Angeles (323) 454-2444. Email info@allcentury.com or visit us. Open Mon-Fri 9am-7pm, Sat 9am-2pm.
+                                                                Getting a quote is easy! Call us toll-free at 888-585-9910 or email info@newdecadeinsurance.com. Our tech-forward approach provides fast quotes for commercial operations across CA, TX, FL, and AZ. For commercial clients, we offer same-day COI turnaround and digital policy management.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -157,7 +158,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 6 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                Absolutely! This is one of our specialties. We work with drivers of all risk levels—from perfect records to those with tickets, accidents, DUIs, or suspended licenses. We have strong relationships with carriers who specialize in diverse driving histories and can find you affordable coverage when others might turn you away.
+                                                                Absolutely! While our primary specialty is commercial insurance, we also provide personal auto coverage across CA, TX, FL, and AZ. We work with drivers of all risk levels—from perfect records to those with tickets, accidents, DUIs, or suspended licenses. We have strong relationships with carriers who specialize in diverse driving histories and can find you affordable coverage when others might turn you away.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -172,7 +173,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 7 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                We handle SR-22 filings regularly—it's one of our core services. An SR-22 is a certificate of financial responsibility required by the California DMV after certain violations like DUI, driving without insurance, or multiple tickets. We file it directly with the DMV and help you get back on the road legally, often the same day.
+                                                                We handle SR-22 filings regularly across all states we serve. An SR-22 is a certificate of financial responsibility often required by state DMVs after certain violations like DUI, driving without insurance, or multiple tickets. We file it directly with the DMV in CA, TX, FL, or AZ and help you get back on the road legally, often the same day.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -228,7 +229,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 10 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                We insure California businesses of all types and sizes: bars & restaurants, beauty salons & spas, contractors & construction trades, retail shops, real estate offices, transportation services, professional services, warehouses, home-based businesses, and startups. If your business exists, there's a good chance we cover it. Each industry has unique needs, and we have experience in them all.
+                                                                We specialize in commercial insurance across CA, TX, FL, and AZ, serving 50+ industries including: commercial fleet operations (our #1 specialty), delivery & logistics, trucking companies, construction, contractors, restaurants, retail, warehousing, manufacturing, professional services, and more. With 20+ years of experience and 150K+ clients served, we understand the unique needs of each industry and provide tailored coverage with fast COI turnaround.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -243,7 +244,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 11 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                Very quickly! We understand that you can't afford to lose a job because of paperwork delays. We can often provide Certificates of Insurance (COI) the same day, sometimes within hours. This quick turnaround is one of the main reasons contractors and small business owners choose us.
+                                                                Very quickly! Fast COI turnaround is one of our key strengths. We understand that you can't afford to lose a job because of paperwork delays. With our tech-forward digital policy management system, we can often provide Certificates of Insurance (COI) the same day, sometimes within hours, for all four states we serve. This quick turnaround is one of the main reasons contractors, fleet operators, and small business owners choose us.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -258,7 +259,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 12 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                It depends on how you use it. If you regularly transport goods, equipment, tools, or clients for business purposes—or if your vehicle has business signage—you likely need commercial auto coverage. Personal auto policies typically exclude business use. This is especially important for contractors, delivery drivers, and rideshare drivers. We can assess your situation and recommend the right coverage.
+                                                                Commercial auto insurance is our #1 specialty! If you regularly transport goods, equipment, tools, or clients for business purposes—or if your vehicle has business signage—you need commercial auto coverage across CA, TX, FL, or AZ. Personal auto policies typically exclude business use. This is especially important for contractors, delivery drivers, fleet operations, and logistics companies. We specialize in multi-state fleet coverage, DOT compliance, and cargo insurance. We can assess your situation and recommend the right coverage with fast COI turnaround.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -273,7 +274,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 13 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                Yes, if you have employees, California law requires workers' compensation insurance. We can help you stay compliant and protect both your workers and your business.
+                                                                Yes! All four states we serve (CA, TX, FL, AZ) require virtually all employers to carry workers' compensation insurance. We specialize in multi-state Workers' Comp compliance, helping businesses stay compliant across state lines. With our tech-forward approach, we provide fast COI turnaround and expert guidance for multi-state operations, protecting both your workers and your business.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -306,7 +307,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 14 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                Contact us immediately at 1-800-250-5540, Panorama City (818) 482-2888, or Los Angeles (323) 454-2444. We work directly with the insurance carriers to help facilitate your claim and ensure it's handled properly.
+                                                                Contact us immediately at 888-585-9910 or email info@newdecadeinsurance.com. We work directly with the insurance carriers across CA, TX, FL, and AZ to help facilitate your claim and ensure it's handled properly. With 100% commitment to client advocacy, we'll guide you through the entire claims process.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -421,42 +422,7 @@ export default function FAQs() {
                     </div>
 
 
-                    {/* Final CTA */}
-                    <div className="cta5-section-area section-padding4">
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors72" />
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6">
-                                    <div className="cta5-auhtor6-area">
-                                        <h1 className="font-lora font-48 lineh-52 color weight-600 margin-b text-capitalize">
-                                            Get Your Free Insurance Quote Today
-                                        </h1>
-                                        <p className="font-ks font-16 lineh-26 weight-500 color-21">
-                                            We believe that informed clients make better insurance decisions. Our experienced team is here to help you find the right coverage at the best price.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-2" />
-                                <div className="col-lg-4">
-                                    <div className="cta5-btn5-sexction">
-                                        <button
-                                            onClick={() => setIsQuoteModalOpen(true)}
-                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
-                                            style={{ cursor: 'pointer' }}
-                                        >
-                                            Get Free Quote
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </button>
-                                        <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
-                                            Contact Us
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors73" />
-                    </div>
+                    <Cta9 />
                 </div>
             </Layout>
 

@@ -17,8 +17,8 @@ export default function About9() {
                         <div className="col-lg-6">
                             <div className="about9-textarea" data-aos="fade-left" data-aos-duration={1000}>
                                 <span className="font-16 font-ks lineh-16 weight-500 colorhp9 d-inline-block margin-b24 insurance">About New Decade Insurance</span>
-                                <h1 className="font-lora font-44 lineh-54 weight-600 colorh9 margin-b24" data-aos="fade-left" data-aos-duration={1200}>Your Trusted Partner Since 2005</h1>
-                                <p className="font-16 font-ks weight-500 color-p2 lineh-26">Founded in 2005, New Decade Insurance is an independent brokerage built on trust, hard work, and long-term relationships. For over two decades, we've been protecting families and businesses across Southern California with personalized service.</p>
+                                <h1 className="font-lora font-44 lineh-54 weight-600 colorh9 margin-b24" data-aos="fade-left" data-aos-duration={1200}>Built on 20 Years of Trust and Dedication</h1>
+                                <p className="font-16 font-ks weight-500 color-p2 lineh-26 margin-b20">New Decade Insurance represents over two decades of unwavering dedication to the insurance market. Our foundation was established in 2005, and since then, we have grown into a powerhouse brokerage serving California, Texas, Florida, and Arizona.</p>
                                 <div className="progress-resonsive margin-t32">
                                     <div className="group-progress">
                                         <div className="group-icons">
@@ -27,8 +27,8 @@ export default function About9() {
                                         <div className="bar" data-aos="fade-left" data-aos-duration={1400}>
                                             <div className="info">
                                                 <div className="flexhtml margin-b">
-                                                    <span className="font-16 font-ks weight-600 color-h9 lineh-16">Personal Auto Insurance</span>
-                                                    <p className="font-16 font-ks weight-600 color-h9 lineh-16">150K+</p>
+                                                    <span className="font-16 font-ks weight-600 color-h9 lineh-16">Proven Industry Experience</span>
+                                                    <p className="font-16 font-ks weight-600 color-h9 lineh-16">20+ Years</p>
                                                 </div>
                                             </div>
                                             <div className="progress-bar html"><span /></div>
@@ -41,8 +41,8 @@ export default function About9() {
                                         <div className="bar margin-t32">
                                             <div className="info">
                                                 <div className="flexhtml margin-b">
-                                                    <span className="font-16 font-ks weight-600 color-h9 lineh-16">Commercial Insurance</span>
-                                                    <p className="font-16 font-ks weight-600 color-h9 lineh-16">20+</p>
+                                                    <span className="font-16 font-ks weight-600 color-h9 lineh-16">Clients & Businesses Served</span>
+                                                    <p className="font-16 font-ks weight-600 color-h9 lineh-16">150K+</p>
                                                 </div>
                                             </div>
                                             <div className="progress-bar css"><span /></div>
@@ -55,11 +55,25 @@ export default function About9() {
                                         <div className="bar margin-t32">
                                             <div className="info">
                                                 <div className="flexhtml margin-b">
-                                                    <span className="font-16 font-ks weight-600 color-h9 lineh-16">Bilingual Service (English & Spanish)</span>
-                                                    <p className="font-16 font-ks weight-600 color-h9 lineh-16">100%</p>
+                                                    <span className="font-16 font-ks weight-600 color-h9 lineh-16">Licensed in 4 States (CA, TX, FL, AZ)</span>
+                                                    <p className="font-16 font-ks weight-600 color-h9 lineh-16">4 States</p>
                                                 </div>
                                             </div>
                                             <div className="progress-bar javascript"><span /></div>
+                                        </div>
+                                    </div>
+                                    <div className="group-progress" data-aos="fade-left" data-aos-duration={1400}>
+                                        <div className="group-icons">
+                                            <img src="/assets/images/icons/groupexport1.svg" alt="" />
+                                        </div>
+                                        <div className="bar margin-t32">
+                                            <div className="info">
+                                                <div className="flexhtml margin-b">
+                                                    <span className="font-16 font-ks weight-600 color-h9 lineh-16">Commitment to Client Advocacy</span>
+                                                    <p className="font-16 font-ks weight-600 color-h9 lineh-16">100%</p>
+                                                </div>
+                                            </div>
+                                            <div className="progress-bar html"><span /></div>
                                         </div>
                                     </div>
                                 </div>

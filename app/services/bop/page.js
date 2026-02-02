@@ -5,6 +5,7 @@ import Link from "next/link"
 import ViewMoreServices from "@/components/sections/services/ViewMoreServices"
 import FAQ from "@/components/sections/services/FAQ"
 import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
+import Cta9 from "@/components/sections/Cta9";
 
 const faqs = [
     {
@@ -169,44 +170,10 @@ export default function BusinessOwnersPolicy() {
                         </div>
                     </div>
 
-                    <ViewMoreServices currentService="/services/bop" />
+                    {/*<ViewMoreServices currentService="/services/bop" />*/}
                     <FAQ faqs={faqs} />
 
-                    <div className="cta5-section-area section-padding4">
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors72" />
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6">
-                                    <div className="cta5-auhtor6-area">
-                                        <h1 className="font-lora font-48 lineh-52 color weight-600 margin-b text-capitalize">
-                                            Get Your BOP Quote Today
-                                        </h1>
-                                        <p className="font-ks font-16 lineh-26 weight-500 color-21">
-                                            Simplify your business insurance and save money. Call 1-800-250-5540 for expert guidance.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-2" />
-                                <div className="col-lg-4">
-                                    <div className="cta5-btn5-sexction">
-                                        <button
-                                            onClick={() => setIsQuoteModalOpen(true)}
-                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
-                                            style={{ cursor: 'pointer' }}
-                                        >
-                                            Get Free Quote
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </button>
-                                        <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
-                                            Contact Us
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors73" />
-                    </div>
+                    <Cta9 />
                 </div>
             </Layout>
 

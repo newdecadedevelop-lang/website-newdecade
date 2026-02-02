@@ -67,24 +67,12 @@ const US_STATES = [
 
 // Validation schema for Step 1 - Basic Info
 const step1Schema = yup.object({
-    firstName: yup
+    fullName: yup
         .string()
-        .required("Please enter your first name")
-        .min(2, "First name must be at least 2 characters")
-        .max(50, "First name is too long")
-        .matches(/^[a-zA-Z\s]+$/, "First name can only contain letters"),
-
-    lastName: yup
-        .string()
-        .required("Please enter your last name")
-        .min(2, "Last name must be at least 2 characters")
-        .max(50, "Last name is too long")
-        .matches(/^[a-zA-Z\s]+$/, "Last name can only contain letters"),
-
-    email: yup
-        .string()
-        .required("Please enter your email address")
-        .email("Please enter a valid email address (example: name@email.com)"),
+        .required("Please enter your full name")
+        .min(2, "Full name must be at least 2 characters")
+        .max(100, "Full name is too long")
+        .matches(/^[a-zA-Z\s]+$/, "Full name can only contain letters"),
 
     phone: yup
         .string()
@@ -101,6 +89,11 @@ const step1Schema = yup.object({
 
 // Validation schema for Step 2 - Personal Details
 const step2Schema = yup.object({
+    email: yup
+        .string()
+        .required("Please enter your email address")
+        .email("Please enter a valid email address (example: name@email.com)"),
+
     dateOfBirth: yup
         .date()
         .nullable()
@@ -119,15 +112,15 @@ const step2Schema = yup.object({
 
     gender: yup
         .string()
-        .required("Please select your gender"),
+        .nullable(),
 
     language: yup
         .string()
-        .required("Please select your preferred language"),
+        .nullable(),
 
     maritalStatus: yup
         .string()
-        .required("Please select your marital status"),
+        .nullable(),
 
     address: yup
         .string()
@@ -136,12 +129,11 @@ const step2Schema = yup.object({
 
     city: yup
         .string()
-        .required("Please enter your city")
-        .min(2, "City name must be at least 2 characters"),
+        .nullable(),
 
     state: yup
         .string()
-        .required("Please select your state"),
+        .nullable(),
 
     zipCode: yup
         .string()
@@ -167,6 +159,11 @@ const step4Schema = yup.object({
 
 // Validation schema for Business Step 2 - Business Details
 const businessStep2Schema = yup.object({
+    email: yup
+        .string()
+        .required("Please enter your email address")
+        .email("Please enter a valid email address (example: name@email.com)"),
+
     companyName: yup
         .string()
         .required("Please enter your company name")
@@ -227,12 +224,11 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
     const [isSubmitted, setIsSubmitted] = useState(false)
     const [formData, setFormData] = useState({
         // Step 1
-        firstName: '',
-        lastName: '',
-        email: '',
+        fullName: '',
         phone: '',
         agreeToContact: true,
         // Step 2 - Personal
+        email: '',
         dateOfBirth: '',
         gender: '',
         language: '',
@@ -338,11 +334,10 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
             setHasContactInfo(false)
             setEmailSent(false)
             setFormData({
-                firstName: '',
-                lastName: '',
-                email: '',
+                fullName: '',
                 phone: '',
                 agreeToContact: true,
+                email: '',
                 dateOfBirth: '',
                 gender: '',
                 language: '',
@@ -382,7 +377,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
     // Function to send email
     const sendQuoteEmail = async (data, step, isComplete = false) => {
         // Don't send if already sent or if no contact info
-        if (emailSent || !data.firstName || !data.email || !data.phone) {
+        if (emailSent || !data.fullName || !data.phone) {
             return
         }
 
@@ -671,62 +666,17 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                         <div className="modal-title-section">
                             <h2>Get Your Free Insurance Quote</h2>
                             <p className="modal-subtitle">
+                                {insuranceType === 'commercial' && 'Commercial Insurance'}
                                 {insuranceType === 'auto' && 'Auto Insurance'}
                                 {insuranceType === 'motorcycle' && 'Motorcycle Insurance'}
-                                {insuranceType === 'commercial' && 'Commercial Insurance'}
                                 {!insuranceType && currentStep === 0 && 'Select Insurance Type'}
                             </p>
                         </div>
                         <button className="modal-close-btn" onClick={handleClose}>
-                            <i className="fas fa-times"></i>
+                            Close
                         </button>
                     </div>
 
-                    {/* Progress Indicator - Only show when in form steps */}
-                    {currentStep >= 1 && (
-                        <div className="modal-progress">
-                            {insuranceType === 'commercial' ? (
-                                <div className="progress-steps">
-                                    <div className={`progress-step ${currentStep >= 1 ? 'active' : ''}`}>
-                                        <span className="step-number">1</span>
-                                        <span className="step-label">Contact</span>
-                                    </div>
-                                    <div className="progress-line"></div>
-                                    <div className={`progress-step ${currentStep >= 2 ? 'active' : ''}`}>
-                                        <span className="step-number">2</span>
-                                        <span className="step-label">Business</span>
-                                    </div>
-                                    <div className="progress-line"></div>
-                                    <div className={`progress-step ${currentStep >= 3 ? 'active' : ''}`}>
-                                        <span className="step-number">3</span>
-                                        <span className="step-label">Coverage</span>
-                                    </div>
-                                </div>
-                            ) : (
-                                <div className="progress-steps">
-                                    <div className={`progress-step ${currentStep >= 1 ? 'active' : ''}`}>
-                                        <span className="step-number">1</span>
-                                        <span className="step-label">Contact</span>
-                                    </div>
-                                    <div className="progress-line"></div>
-                                    <div className={`progress-step ${currentStep >= 2 ? 'active' : ''}`}>
-                                        <span className="step-number">2</span>
-                                        <span className="step-label">Personal</span>
-                                    </div>
-                                    <div className="progress-line"></div>
-                                    <div className={`progress-step ${currentStep >= 3 ? 'active' : ''}`}>
-                                        <span className="step-number">3</span>
-                                        <span className="step-label">Vehicle</span>
-                                    </div>
-                                    <div className="progress-line"></div>
-                                    <div className={`progress-step ${currentStep >= 4 ? 'active' : ''}`}>
-                                        <span className="step-number">4</span>
-                                        <span className="step-label">Coverage</span>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    )}
 
                     {/* Modal Body */}
                     <div className="modal-body">
@@ -738,6 +688,35 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                     <p className="coverage-description">Select the type of insurance you need</p>
 
                                     <div className="insurance-options">
+                                        <label
+                                            className={`insurance-option ${insuranceType === 'commercial' ? 'active' : ''}`}
+                                            onClick={() => setInsuranceType('commercial')}
+                                        >
+                                            <div className="option-icon">
+                                                <Image
+                                                    src="/assets/images/business-blue-003385.png"
+                                                    alt="Commercial Insurance"
+                                                    width={60}
+                                                    height={40}
+                                                    style={{ objectFit: 'contain' }}
+                                                />
+                                            </div>
+                                            <div className="option-content">
+                                                <h4>Commercial Insurance</h4>
+                                                <p>Comprehensive coverage for your business vehicles</p>
+                                            </div>
+                                            <div className="option-radio">
+                                                <input
+                                                    type="radio"
+                                                    name="insuranceType"
+                                                    value="commercial"
+                                                    checked={insuranceType === 'commercial'}
+                                                    onChange={() => setInsuranceType('commercial')}
+                                                />
+                                                <span className="radio-checkmark"></span>
+                                            </div>
+                                        </label>
+
                                         <label
                                             className={`insurance-option ${insuranceType === 'auto' ? 'active' : ''}`}
                                             onClick={() => setInsuranceType('auto')}
@@ -795,35 +774,6 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                                 <span className="radio-checkmark"></span>
                                             </div>
                                         </label>
-
-                                        <label
-                                            className={`insurance-option ${insuranceType === 'commercial' ? 'active' : ''}`}
-                                            onClick={() => setInsuranceType('commercial')}
-                                        >
-                                            <div className="option-icon">
-                                                <Image
-                                                    src="/assets/images/business-blue-003385.png"
-                                                    alt="Commercial Insurance"
-                                                    width={60}
-                                                    height={40}
-                                                    style={{ objectFit: 'contain' }}
-                                                />
-                                            </div>
-                                            <div className="option-content">
-                                                <h4>Commercial Insurance</h4>
-                                                <p>Comprehensive coverage for your business vehicles</p>
-                                            </div>
-                                            <div className="option-radio">
-                                                <input
-                                                    type="radio"
-                                                    name="insuranceType"
-                                                    value="commercial"
-                                                    checked={insuranceType === 'commercial'}
-                                                    onChange={() => setInsuranceType('commercial')}
-                                                />
-                                                <span className="radio-checkmark"></span>
-                                            </div>
-                                        </label>
                                     </div>
 
                                     {!insuranceType && (
@@ -877,53 +827,18 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
 
                                     <div className="form-row">
                                         <div className="form-group">
-                                            <label htmlFor="firstName">First Name *</label>
+                                            <label htmlFor="fullName">Full Name *</label>
                                             <input
                                                 type="text"
-                                                id="firstName"
-                                                {...register("firstName")}
-                                                placeholder="Enter your first name"
-                                                className={errors.firstName ? 'input-error' : ''}
+                                                id="fullName"
+                                                {...register("fullName")}
+                                                placeholder="Enter your full name"
+                                                className={errors.fullName ? 'input-error' : ''}
                                             />
-                                            {errors.firstName && (
+                                            {errors.fullName && (
                                                 <span className="error-message">
                                                     <i className="fas fa-exclamation-circle"></i>
-                                                    {errors.firstName.message}
-                                                </span>
-                                            )}
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="lastName">Last Name *</label>
-                                            <input
-                                                type="text"
-                                                id="lastName"
-                                                {...register("lastName")}
-                                                placeholder="Enter your last name"
-                                                className={errors.lastName ? 'input-error' : ''}
-                                            />
-                                            {errors.lastName && (
-                                                <span className="error-message">
-                                                    <i className="fas fa-exclamation-circle"></i>
-                                                    {errors.lastName.message}
-                                                </span>
-                                            )}
-                                        </div>
-                                    </div>
-
-                                    <div className="form-row">
-                                        <div className="form-group">
-                                            <label htmlFor="email">Email Address *</label>
-                                            <input
-                                                type="email"
-                                                id="email"
-                                                {...register("email")}
-                                                placeholder="your.email@example.com"
-                                                className={errors.email ? 'input-error' : ''}
-                                            />
-                                            {errors.email && (
-                                                <span className="error-message">
-                                                    <i className="fas fa-exclamation-circle"></i>
-                                                    {errors.email.message}
+                                                    {errors.fullName.message}
                                                 </span>
                                             )}
                                         </div>
@@ -965,7 +880,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                         />
                                         <span className="checkmark"></span>
                                         <span className="consent-text" style={{ fontSize: '10px'}}>
-                                            By submitting this form, I consent to be contacted by All Century Insurance via phone, email, or text message regarding my insurance quote. Standard message and data rates may apply.
+                                            By submitting this form, I consent to be contacted by New Decade Insurance via phone, email, or text message regarding my insurance quote. Standard message and data rates may apply.
                                         </span>
                                     </label>
                                     {errors.agreeToContact && (
@@ -985,6 +900,22 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                     <h3 className="section-title">Tell Us About Your Business</h3>
 
                                     <div className="form-row">
+                                        <div className="form-group">
+                                            <label htmlFor="email">Email Address *</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                {...register("email")}
+                                                placeholder="your.email@example.com"
+                                                className={errors.email ? 'input-error' : ''}
+                                            />
+                                            {errors.email && (
+                                                <span className="error-message">
+                                                    <i className="fas fa-exclamation-circle"></i>
+                                                    {errors.email.message}
+                                                </span>
+                                            )}
+                                        </div>
                                         <div className="form-group">
                                             <label htmlFor="companyName">Company Name *</label>
                                             <input
@@ -1110,6 +1041,22 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
 
                                     <div className="form-row">
                                         <div className="form-group">
+                                            <label htmlFor="email">Email Address *</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                {...register("email")}
+                                                placeholder="your.email@example.com"
+                                                className={errors.email ? 'input-error' : ''}
+                                            />
+                                            {errors.email && (
+                                                <span className="error-message">
+                                                    <i className="fas fa-exclamation-circle"></i>
+                                                    {errors.email.message}
+                                                </span>
+                                            )}
+                                        </div>
+                                        <div className="form-group">
                                             <label htmlFor="dateOfBirth">Date of Birth *</label>
                                             <DatePicker
                                                 ref={datePickerRef}
@@ -1139,8 +1086,11 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                                 </span>
                                             )}
                                         </div>
+                                    </div>
+
+                                    <div className="form-row">
                                         <div className="form-group">
-                                            <label htmlFor="gender">Gender *</label>
+                                            <label htmlFor="gender">Gender</label>
                                             <select
                                                 id="gender"
                                                 {...register("gender")}
@@ -1157,11 +1107,8 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                                 </span>
                                             )}
                                         </div>
-                                    </div>
-
-                                    <div className="form-row">
                                         <div className="form-group">
-                                            <label htmlFor="language">Preferred Language *</label>
+                                            <label htmlFor="language">Preferred Language</label>
                                             <select
                                                 id="language"
                                                 {...register("language")}
@@ -1178,8 +1125,11 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                                 </span>
                                             )}
                                         </div>
+                                    </div>
+
+                                    <div className="form-row">
                                         <div className="form-group">
-                                            <label htmlFor="maritalStatus">Marital Status *</label>
+                                            <label htmlFor="maritalStatus">Marital Status</label>
                                             <select
                                                 id="maritalStatus"
                                                 {...register("maritalStatus")}
@@ -1197,6 +1147,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                                 </span>
                                             )}
                                         </div>
+                                        <div className="form-group"></div>
                                     </div>
 
                                     <div className="form-row" style={{gridTemplateColumns: '1fr'}}>
@@ -1255,7 +1206,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
 
                                     <div className="form-row">
                                         <div className="form-group">
-                                            <label htmlFor="city">City *</label>
+                                            <label htmlFor="city">City</label>
                                             <input
                                                 type="text"
                                                 id="city"
@@ -1272,7 +1223,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                             )}
                                         </div>
                                         <div className="form-group">
-                                            <label htmlFor="state">State *</label>
+                                            <label htmlFor="state">State</label>
                                             <Select
                                                 id="state"
                                                 options={US_STATES}
@@ -1638,36 +1589,17 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                                 <input
                                                     type="radio"
                                                     {...register("coverageType")}
-                                                    value="collision"
-                                                />
-                                                <div className="coverage-card-content">
-                                                    <div className="coverage-header">
-                                                        <h4>Collision Coverage</h4>
-                                                        <span className="coverage-badge popular">Most Popular</span>
-                                                    </div>
-                                                    <p className="coverage-price">Recommended</p>
-                                                    <ul className="coverage-features">
-                                                        <li><i className="fas fa-check"></i> Everything in Liability</li>
-                                                        <li><i className="fas fa-check"></i> Covers your vehicle damage</li>
-                                                        <li><i className="fas fa-check"></i> Collision protection</li>
-                                                    </ul>
-                                                </div>
-                                            </label>
-
-                                            <label className="coverage-card">
-                                                <input
-                                                    type="radio"
-                                                    {...register("coverageType")}
                                                     value="comprehensive"
                                                 />
                                                 <div className="coverage-card-content">
                                                     <div className="coverage-header">
                                                         <h4>Comprehensive Coverage</h4>
-                                                        <span className="coverage-badge">Full Protection</span>
+                                                        <span className="coverage-badge popular">Most Popular</span>
                                                     </div>
                                                     <p className="coverage-price">Complete Peace of Mind</p>
                                                     <ul className="coverage-features">
-                                                        <li><i className="fas fa-check"></i> Everything in Collision</li>
+                                                        <li><i className="fas fa-check"></i> Everything in Liability</li>
+                                                        <li><i className="fas fa-check"></i> Collision protection</li>
                                                         <li><i className="fas fa-check"></i> Theft & vandalism</li>
                                                         <li><i className="fas fa-check"></i> Weather damage</li>
                                                     </ul>
@@ -1723,13 +1655,13 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                     width: '80px',
                                     height: '80px',
                                     borderRadius: '50%',
-                                    background: 'var(--color-set-one-1)',
+                                    background: '#28a745',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     margin: '0 auto 30px',
                                     fontSize: '40px',
-                                    color: 'white'
+                                    color: '#ffffff'
                                 }}>
                                     <i className="fas fa-check"></i>
                                 </div>
@@ -1745,7 +1677,7 @@ export default function InsuranceQuoteModal({ isOpen, onClose, selectedInsurance
                                     Your quote request has been received successfully.
                                 </p>
                                 <p style={{ fontSize: '16px', color: '#666', marginBottom: '30px', lineHeight: '1.6' }}>
-                                    An agent from <strong style={{ color: 'var(--heading-color-one)' }}>All Century Insurance</strong> will contact you shortly to discuss your coverage options and provide you with a personalized quote.
+                                    An agent from <strong style={{ color: 'var(--heading-color-one)' }}>New Decade Insurance</strong> will contact you shortly to discuss your coverage options and provide you with a personalized quote.
                                 </p>
                                 <div style={{
                                     background: '#f0f7ff',

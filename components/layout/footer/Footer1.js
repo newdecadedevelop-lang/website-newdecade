@@ -13,7 +13,7 @@ export default function Footer1() {
                                     <div className="col-lg-3">
                                         <div className="contact5-logo5-text">
                                             <img src="/assets/images/logo/NDLOGO_WHITE.svg" alt="New Decade Insurance" />
-                                            <p className="font-ks font-16 weight-500 lineh-26 color32 margin-t margin-b24">Protecting what matters most with comprehensive insurance solutions. From auto and motorcycle to business coverage, we're here to secure your future with competitive rates and exceptional service.</p>
+                                            <p className="font-ks font-16 weight-500 lineh-26 color32 margin-t margin-b24">Multi-state commercial insurance specialists serving CA, TX, FL, and AZ. With 20+ years of experience and 150K+ clients across 50+ industries, we provide commercial auto/fleet, general liability, workers' comp, and more with fast COI turnaround and tech-forward digital management.</p>
                                             <div className="icon-social-links">
                                                 <ul>
                                                     <li><Link href="#"><i className="fa-brands fa-facebook-f" /></Link></li>
@@ -47,11 +47,11 @@ export default function Footer1() {
                                             </div>
                                             <span className="location-fooetr ">
                                                 <img src="/assets/images/icons/location2.png" alt="" className="heightwidth" />
-                                                <Link href="#" className="font-16 font-ks lineh-26 weight-500 color32 margin-t">Houston, Texas <br /> United States</Link>
+                                                <Link href="#" className="font-16 font-ks lineh-26 weight-500 color32 margin-t">2215 S. Vermont Ave Unit 103<br />Los Angeles, CA 90007</Link>
                                             </span>
                                             <div className="email4 margin-t">
                                                 <img src="/assets/images/icons/phone5.svg" alt="" />
-                                                <Link href="/tel:+1-800-NEW-DECADE" className="font-16 lineh-24 color32 weight-400 font-ks">+1 (800) NEW-DECADE</Link>
+                                                <Link href="/tel:888-585-9910" className="font-16 lineh-24 color32 weight-400 font-ks">888-585-9910</Link>
                                             </div>
                                         </div>
                                     </div>

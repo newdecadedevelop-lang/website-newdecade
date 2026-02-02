@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
+import Cta9 from "@/components/sections/Cta9"
 
 // Validation schema
 const contactSchema = yup.object({
@@ -148,15 +149,15 @@ export default function Home() {
                                     <div className="contcat5-textarea5">
                                         <span className="about3span font-ks lineh-16 font-16 weight-600 color-29 d-inline-block margin-b24">Contact
                                             Us</span>
-                                        <h1 className="font-lora font-48 lineh-56 weight-600 color-29 margin-b20 clienth2">Get Your Free Insurance Quote Today</h1>
-                                        <p className="font-ks font-16 weight-500 lineh-26 color-30">Our experienced team is here to help you find the right insurance coverage at competitive rates. We provide comprehensive solutions for auto, motorcycle, and business insurance needs.</p>
+                                        <h1 className="font-lora font-48 lineh-56 weight-600 color-29 margin-b20 clienth2">Get Your Free Multi-State Insurance Quote</h1>
+                                        <p className="font-ks font-16 weight-500 lineh-26 color-30">With 20+ years of experience serving CA, TX, FL, and AZ, we specialize in commercial insurance with fast COI turnaround and tech-forward digital policy management. Whether you need fleet coverage, general liability, workers' comp, or personal auto, we're here to help across all four states we serve.</p>
                                         <div className="phone7-textarea margin-t32 contactinnerbg">
                                             <div className="phone7-icon">
                                                 <img src="/assets/images/icons/phone8.png" alt="" />
                                             </div>
                                             <div className="phone7-text">
                                                 <p className="font-16 lineh-16 weight-500 font-ks color-30 margin-b">Give us a Call</p>
-                                                <Link href="/tel:+1-800-NEW-DECADE" className="font-lora font-24 weight-700 lineh-24 color-29">+1 (800) NEW-DECADE</Link>
+                                                <Link href="/tel:888-585-9910" className="font-lora font-24 weight-700 lineh-24 color-29">888-585-9910</Link>
                                             </div>
                                         </div>
                                         <div className="phone7-textarea margin-t contactinnerbg">
@@ -165,7 +166,7 @@ export default function Home() {
                                             </div>
                                             <div className="phone7-text">
                                                 <p className="font-16 lineh-16 weight-500 font-ks color-30 margin-b">Send us an Email</p>
-                                                <Link href="/mailto:info@newdecadeinsurance.com" className="font-lora font-24 weight-700 lineh-24 color-29">info@newdecade.com</Link>
+                                                <Link href="/mailto:info@newdecadeinsurance.com" className="font-lora font-24 weight-700 lineh-24 color-29">info@newdecadeinsurance.com</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -174,7 +175,7 @@ export default function Home() {
                                     <div className="contact5-main-section">
                                         <div className="contact-main-text">
                                             <h1 className="font-lora font-24 lineh-24 weight-600 color">Send us a Message</h1>
-                                            <p className="font-ks font-16 lineh-26 weight-500 color margin-t">Fill out the form below and our team will get back to you within 24 business hours with a personalized insurance quote.</p>
+                                            <p className="font-ks font-16 lineh-26 weight-500 color margin-t">Fill out the form below and our expert team will get back to you within 24 business hours with a personalized multi-state insurance quote. We specialize in commercial insurance with fast COI turnaround.</p>
                                         </div>
 
                                         {/* Status Messages */}
@@ -269,13 +270,12 @@ export default function Home() {
                                                                 }}
                                                             >
                                                                 <option value="">Select Insurance Type *</option>
-                                                                <option value="Auto Insurance">Auto Insurance</option>
-                                                                <option value="Motorcycle Insurance">Motorcycle Insurance</option>
-                                                                <option value="Commercial Auto">Commercial Auto</option>
-                                                                <option value="Business Insurance">Business Insurance</option>
+                                                                <option value="Commercial Auto / Fleet">Commercial Auto / Fleet (Our #1 Specialty)</option>
                                                                 <option value="General Liability">General Liability</option>
                                                                 <option value="Workers Compensation">Workers Compensation</option>
-                                                                <option value="SR-22 Filing">SR-22 Filing</option>
+                                                                <option value="Cargo Insurance">Cargo Insurance</option>
+                                                                <option value="Personal Auto">Personal Auto</option>
+                                                                <option value="Motorcycle Insurance">Motorcycle Insurance</option>
                                                                 <option value="Other">Other</option>
                                                             </select>
                                                             {errors.subject && (
@@ -345,7 +345,7 @@ export default function Home() {
                                                         </h2>
                                                         <div id="collapseOne" className={isActive.key == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
                                                             <div className="accordion-body">
-                                                                <p className="font-ks font-16 lineh-26 weight-500 color-22 ">We offer comprehensive insurance solutions including auto insurance, motorcycle insurance, commercial auto, business insurance, general liability, workers compensation, and SR-22 filing services. Each policy is customized to meet your specific needs and budget.</p>
+                                                                <p className="font-ks font-16 lineh-26 weight-500 color-22 ">We specialize in commercial insurance across CA, TX, FL, and AZ, including commercial auto/fleet (our #1 specialty), general liability, workers' compensation, and cargo insurance. We also provide personal auto and motorcycle coverage. With 20+ years serving 50+ industries, each policy is customized with fast COI turnaround and tech-forward digital management.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -357,7 +357,7 @@ export default function Home() {
                                                         </h2>
                                                         <div id="collapseTwo" className={isActive.key == 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
                                                             <div className="accordion-body">
-                                                                <p className="font-ks font-16 lineh-26 weight-500 color-30 ">We typically provide quotes within 24 business hours. For urgent requests, you can call us directly and we'll work to get you a quote on the same day. Our goal is to make the process as quick and easy as possible.</p>
+                                                                <p className="font-ks font-16 lineh-26 weight-500 color-30 ">With our tech-forward approach, we typically provide quotes within 24 business hours. For commercial clients, we offer same-day COI turnaround. Call us at 888-585-9910 for urgent requests and we'll expedite your quote across CA, TX, FL, or AZ.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -369,7 +369,7 @@ export default function Home() {
                                                         </h2>
                                                         <div id="collapseThree" className={isActive.key == 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
                                                             <div className="accordion-body">
-                                                                <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Yes! We work with multiple insurance carriers to find you the most competitive rates available. We compare policies from various providers to ensure you get the best coverage at the best price for your specific needs.</p>
+                                                                <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Yes! As an independent brokerage with 100% commitment to client advocacy, we work with multiple top-rated carriers across CA, TX, FL, and AZ. We compare policies to ensure you get the best multi-state coverage at competitive rates, especially for commercial operations and fleet insurance.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -397,7 +397,7 @@ export default function Home() {
                                                                 </h2>
                                                                 <div id="collapseFive" className={isActive.key == 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
                                                                     <div className="accordion-body">
-                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-22 ">Absolutely! You can add or remove vehicles, change coverage levels, update driver information, or adjust your policy as your needs change. Contact us anytime and we'll help you make the necessary adjustments.</p>
+                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-22 ">Absolutely! Our tech-forward digital policy management system makes it easy to add or remove vehicles, change coverage levels, update driver information, or adjust your multi-state policy as your business grows. Contact us at 888-585-9910 anytime for fast adjustments.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -409,7 +409,7 @@ export default function Home() {
                                                                 </h2>
                                                                 <div id="collapseSix" className={isActive.key == 6 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
                                                                     <div className="accordion-body">
-                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Yes, we specialize in SR-22 filings and high-risk insurance. We understand that everyone deserves quality coverage, regardless of their driving history. We'll help you meet state requirements and get back on the road.</p>
+                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Yes, we provide SR-22 filings across CA, TX, FL, and AZ. While our primary specialty is commercial insurance, we also help drivers with all histories get the coverage they need. We'll file directly with your state DMV and help you meet requirements quickly.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -421,7 +421,7 @@ export default function Home() {
                                                                 </h2>
                                                                 <div id="collapseSeven" className={isActive.key == 7 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
                                                                     <div className="accordion-body">
-                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Filing a claim is simple. Contact us immediately after an incident, and we'll guide you through the entire claims process. We work directly with insurance carriers to ensure your claim is processed quickly and efficiently.</p>
+                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Filing a claim is simple across all four states we serve. Contact us immediately at 888-585-9910 and we'll guide you through the entire process. With 100% commitment to client advocacy, we work directly with carriers in CA, TX, FL, and AZ to ensure your claim is processed quickly and efficiently.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -433,7 +433,7 @@ export default function Home() {
                                                                 </h2>
                                                                 <div id="collapseEight" className={isActive.key == 8 ? "accordion-collapse collapse show" : "accordion-collapse collapse"} data-bs-parent="#accordionExample">
                                                                     <div className="accordion-body">
-                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Yes! We offer comprehensive business insurance packages including commercial auto, general liability, workers compensation, and more. We'll create a customized package that protects your business and fits your budget.</p>
+                                                                        <p className="font-ks font-16 lineh-26 weight-500 color-30 ">Yes! Commercial insurance is our specialty. We offer comprehensive multi-state packages including commercial auto/fleet (our #1 specialty), general liability, workers' compensation, and cargo insurance. With 20+ years serving 50+ industries across CA, TX, FL, and AZ, we'll create a customized package with fast COI turnaround and digital policy management.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -450,41 +450,7 @@ export default function Home() {
                     </div>
                     {/*===== FAQ END=======*/}
                     {/*===== CTA STARST=======*/}
-                    <div className="cta5-section-area section-padding4">
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors72" />
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6">
-                                    <div className="cta5-auhtor6-area">
-                                        <h1 className="font-lora font-48 lineh-52 color weight-600 margin-b text-capitalize">Ready to Protect What Matters Most?</h1>
-                                        <p className="font-ks font-16 lineh-26 weight-500 color-21">Get comprehensive insurance coverage at competitive rates. Our team is ready to help you find the perfect policy for your needs, whether it's auto, motorcycle, or business insurance.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-2" />
-                                <div className="col-lg-4">
-                                    <div className="cta5-btn5-sexction">
-                                        <button
-                                            onClick={() => setIsQuoteModalOpen(true)}
-                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
-                                            style={{ cursor: 'pointer' }}
-                                        >
-                                            Get Free Quote
-                                            <span>
-                                                <i className="fa-solid fa-arrow-right" />
-                                            </span>
-                                        </button>
-                                        <Link href="/about" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
-                                            Learn More
-                                            <span>
-                                                <i className="fa-solid fa-arrow-right" />
-                                            </span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors73" />
-                    </div>
+                    <Cta9 />
                 </div>
 
             </Layout>

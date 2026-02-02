@@ -64,22 +64,21 @@
 .modal-close-btn {
     background: #f5f5f5;
     border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    padding: 10px 20px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
     color: #666;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .modal-close-btn:hover {
     background: #dc3545;
     color: white;
-    transform: rotate(90deg);
 }
 
 /* Progress Indicator */
@@ -524,13 +523,13 @@
 
 /* Welcome9 Insurance Form Overlay */
 .insurance-selection-overlay {
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
-    left: 50%;
+    /*left: 50%;*/
     transform: translate(-50%, -50%);
     width: 90%;
     max-width: 500px;
-    z-index: 10;
+    z-index: 4;
 }
 
 .insurance-form-box {

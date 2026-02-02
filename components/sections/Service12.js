@@ -23,57 +23,57 @@ export default function Service12() {
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts width2">
-                                <Link href="/about" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>100% Bilingual Service</Link>
+                                <Link href="/about" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Licensed in 4 States</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts width3">
-                                <Link href="/about" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>150K+ Served Clients</Link>
+                                <Link href="/about" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>150K+ Clients Served</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts width4">
-                                <Link href="/servicev2" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>50+ Industries Covered</Link>
+                                <Link href="/services" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Commercial Specialists</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts width5">
-                                <Link href="/services/personal-auto" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>All Drivers Welcome</Link>
+                                <Link href="/services" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Fleet Coverage Experts</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts">
-                                <Link href="/services/sr22" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Same-Day SR-22 Filing</Link>
+                                <Link href="/contact" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Fast COI Turnaround</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts">
-                                <Link href="/servicev2" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Multiple Carriers</Link>
+                                <Link href="/services" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>General Liability</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts">
-                                <Link href="/contact" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Personal Attention</Link>
+                                <Link href="/contact" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Digital Policy Management</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts">
-                                <Link href="/services/commercial" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Commercial Insurance</Link>
+                                <Link href="/services" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Cargo Insurance</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts">
-                                <Link href="/services/workers-comp" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Workers' Compensation</Link>
+                                <Link href="/services" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Workers' Compensation</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts">
-                                <Link href="/services/motorcycle" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Motorcycle Coverage</Link>
+                                <Link href="/services" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Multi-State Operations</Link>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="service-auhtor9-boxarea ts">
-                                <Link href="/servicev2" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>Competitive Rates</Link>
+                                <Link href="/contact" className="font-17 lineh-16 weight-600 color-h9 font-ks ts"><span className="ts"><i className="fa-solid fa-check" /></span>100% Client Advocacy</Link>
                             </div>
                         </div>
                     </div>

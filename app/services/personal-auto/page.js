@@ -5,6 +5,7 @@ import Link from "next/link"
 import ViewMoreServices from "@/components/sections/services/ViewMoreServices"
 import FAQ from "@/components/sections/services/FAQ"
 import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
+import Cta9 from "@/components/sections/Cta9";
 
 const faqs = [
     {
@@ -13,7 +14,7 @@ const faqs = [
     },
     {
         question: "What is SR-22 insurance and do you provide it?",
-        answer: "SR-22 is a certificate proving you carry auto insurance, required by California DMV after certain violations. Yes, we provide SR-22 filing and help you get back on the road legally. We'll handle all the paperwork and file it directly with the DMV for you."
+        answer: "SR-22 is a certificate proving you carry auto insurance, often required by state DMVs after certain violations. Yes, we provide SR-22 filing across CA, TX, FL, and AZ and help you get back on the road legally. We'll handle all the paperwork and file it directly with your state's DMV."
     },
     {
         question: "How quickly can I get a quote?",
@@ -60,10 +61,10 @@ export default function PersonalAutoInsurance() {
                                             Personal Auto Insurance
                                         </h1>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30 margin-b20">
-                                            At New Decade, we specialize in personal auto insurance for all California drivers. Whether you have a perfect driving record or need SR-22 coverage, we work with multiple carriers to find you the best rates and coverage options.
+                                            At New Decade, we provide personal auto insurance across California, Texas, Florida, and Arizona. While our primary specialty is commercial insurance, we deliver expert personal auto coverage with the same dedication and competitive rates. Whether you have a perfect driving record or need SR-22 coverage, we work with multiple carriers to find you the best options.
                                         </p>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                            Founded in 2005, New Decade has been serving California drivers for over 20 years. We understand that everyone deserves affordable, quality insurance—no matter their driving history. Our bilingual team is here to answer all your questions in English or Spanish.
+                                            Founded in 2005 with 20+ years of experience and 150K+ clients served, we understand that everyone deserves affordable, quality insurance across all four states we serve—no matter their driving history.
                                         </p>
                                         <div className="border30" />
 
@@ -71,7 +72,7 @@ export default function PersonalAutoInsurance() {
                                             Why Choose New Decade for Auto Insurance?
                                         </h1>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                            We're more than just an insurance agency—we're your partner on the road. Our experienced team works with multiple carriers to compare rates and find you the best coverage at competitive prices.
+                                            While our primary focus is commercial insurance, we bring the same dedication and expertise to personal auto coverage. Our experienced team works with multiple carriers across CA, TX, FL, and AZ to compare rates and find you the best coverage at competitive prices.
                                         </p>
 
                                         <div className="row">
@@ -162,7 +163,7 @@ export default function PersonalAutoInsurance() {
                                         </div>
 
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                            Your satisfaction is our priority. With over 20 years of experience serving California drivers, we're here to provide the coverage you need at prices you can afford. Get your free quote today!
+                                            Your satisfaction is our priority. With over 20 years of experience serving drivers across California, Texas, Florida, and Arizona, we're here to provide the coverage you need at prices you can afford. Get your free quote today!
                                         </p>
                                     </div>
                                 </div>
@@ -171,47 +172,12 @@ export default function PersonalAutoInsurance() {
                     </div>
 
                     {/* View More Services */}
-                    <ViewMoreServices currentService="/services/personal-auto" />
+                    {/*<ViewMoreServices currentService="/services/personal-auto" />*/}
 
                     {/* FAQ */}
                     <FAQ faqs={faqs} />
 
-                    {/* CTA */}
-                    <div className="cta5-section-area section-padding4">
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors72" />
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6">
-                                    <div className="cta5-auhtor6-area">
-                                        <h1 className="font-lora font-48 lineh-52 color weight-600 margin-b text-capitalize">
-                                            Get Your Free Auto Insurance Quote
-                                        </h1>
-                                        <p className="font-ks font-16 lineh-26 weight-500 color-21">
-                                            Call us toll-free at 1-800-250-5540 or contact us online. We'll help you find the right coverage at the best price.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-2" />
-                                <div className="col-lg-4">
-                                    <div className="cta5-btn5-sexction">
-                                        <button
-                                            onClick={() => setIsQuoteModalOpen(true)}
-                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
-                                            style={{ cursor: 'pointer' }}
-                                        >
-                                            Get Free Quote
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </button>
-                                        <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
-                                            Contact Us
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors73" />
-                    </div>
+                    <Cta9 />
                 </div>
             </Layout>
 

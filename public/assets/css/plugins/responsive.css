@@ -54,7 +54,42 @@ Description:
 
 
 @media screen and (max-width:991px) {
-    
+    .welcome9-section-area {
+        min-height: 75vh;
+        padding: 100px 0 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .welcome9-slider {
+        display: none;
+    }
+
+    /* Hide slider text content on mobile - only show insurance box */
+    .welcome9-section-area .header9-textarea {
+        display: none !important;
+    }
+
+    /* Ensure insurance box is visible and properly positioned */
+    .welcome9-section-area .col-lg-7 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    /* Ensure insurance selection overlay has proper positioning */
+    .insurance-selection-overlay {
+        position: relative !important;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .insurance-form-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
 }
 @media screen and (min-width:768px) and (max-width:991px) {
     .section-padding5{
@@ -520,6 +555,11 @@ img.welcome9 {
 
 .welconme8-imga {
     margin-top: 30px;
+}
+
+/* Hide slider navigation on mobile/tablet */
+.slider-navigation {
+    display: none !important;
 }
 
 .others9-type {
@@ -1301,6 +1341,7 @@ img.growth1 {
         position: relative;
         right: 0;
         text-align: center;
+        margin-top: 40px;
     }
 
 
@@ -2005,6 +2046,11 @@ img.welcome9 {
 
 .welconme8-imga {
     margin-top: 30px;
+}
+
+/* Hide slider navigation on mobile/tablet */
+.slider-navigation {
+    display: none !important;
 }
 
 .others9-type {
@@ -3627,6 +3673,11 @@ img.welcome9 {
 
 .welconme8-imga {
     margin-top: 30px;
+}
+
+/* Hide slider navigation on mobile/tablet */
+.slider-navigation {
+    display: none !important;
 }
 
 .others9-type {

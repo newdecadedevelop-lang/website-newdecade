@@ -5,39 +5,40 @@ import Link from "next/link"
 import ViewMoreServices from "@/components/sections/services/ViewMoreServices"
 import FAQ from "@/components/sections/services/FAQ"
 import InsuranceQuoteModal from "@/components/modals/InsuranceQuoteModal"
+import Cta9 from "@/components/sections/Cta9";
 
 const faqs = [
     {
-        question: "What businesses do you insure?",
-        answer: "We insure a wide variety of businesses including restaurants, bars, retail shops, offices, warehouses, contractors, and more. As a licensed Fire & Casualty Insurance Broker, we provide customized commercial insurance solutions for California businesses."
+        question: "What types of commercial vehicles do you insure?",
+        answer: "We insure all types of commercial vehicles across CA, TX, FL, and AZ including delivery vans, box trucks, semi-trucks, service vehicles, company cars, and entire commercial fleets. From single vehicles to multi-state operations, we provide comprehensive coverage."
     },
     {
-        question: "What is included in a Business Owners Policy (BOP)?",
-        answer: "A BOP typically combines general liability, property insurance, and business interruption coverage in one package. It's a cost-effective solution for small to medium-sized businesses looking to protect their operations comprehensively."
+        question: "Do you cover multi-state fleet operations?",
+        answer: "Absolutely! As multi-state specialists, we provide seamless commercial auto coverage across California, Texas, Florida, and Arizona. We understand the complexities of interstate commerce and DOT requirements."
     },
     {
-        question: "Do I need Workers' Compensation insurance?",
-        answer: "In California, most businesses with employees are required to carry Workers' Compensation insurance. It protects both your employees and your business in case of work-related injuries or illnesses."
+        question: "What's included in commercial auto insurance?",
+        answer: "Coverage typically includes liability, physical damage, uninsured/underinsured motorist, medical payments, and cargo protection. We customize packages based on your fleet size, vehicle types, and operational needs across all states we serve."
     },
     {
-        question: "How much does commercial insurance cost?",
-        answer: "Costs vary based on your industry, business size, location, coverage needs, and risk factors. Contact us for a personalized quote—we work with multiple carriers to find competitive rates for your business."
+        question: "How is commercial auto different from personal auto?",
+        answer: "Commercial auto provides higher liability limits, covers business use, protects employees driving company vehicles, and includes specialized coverages like cargo insurance and hired/non-owned auto coverage that personal policies don't offer."
     },
     {
-        question: "Can you help with insurance for restaurants and bars?",
-        answer: "Absolutely! We specialize in insurance for restaurants, bars, and food service businesses. We understand the unique risks you face and can provide comprehensive coverage including liquor liability, property, general liability, and more."
+        question: "Can you help with DOT requirements and compliance?",
+        answer: "Yes! We specialize in helping trucking and logistics companies meet DOT requirements across multiple states. We provide fast COI turnaround and expert guidance on compliance for interstate operations."
     },
     {
-        question: "What is General Liability insurance?",
-        answer: "General Liability insurance protects your business from claims of bodily injury, property damage, and personal injury. It's essential coverage for most businesses and is often required by landlords and contracts."
+        question: "What is the cost for fleet insurance?",
+        answer: "Costs vary based on fleet size, vehicle types, driver records, cargo, and operating territories. With 20+ years of experience and multiple carrier relationships, we find competitive rates for multi-state commercial operations. Contact us for a customized quote."
     },
     {
-        question: "Do you offer same-day coverage?",
-        answer: "In many cases, yes! We understand that businesses sometimes need coverage quickly. Contact us and we'll do our best to get you covered the same day."
+        question: "Do you offer cargo insurance?",
+        answer: "Yes! We provide comprehensive cargo insurance for goods in transit across all four states we serve. Essential protection for trucking companies, freight forwarders, and logistics operations."
     },
     {
-        question: "Can I add multiple locations to my policy?",
-        answer: "Yes, we can insure businesses with multiple locations. We'll help you structure your coverage to protect all your business locations efficiently and cost-effectively."
+        question: "Can you insure delivery and logistics companies?",
+        answer: "Absolutely! We specialize in delivery services, courier companies, last-mile logistics, and freight operations. We understand the unique risks and provide tailored coverage for your transportation business across CA, TX, FL, and AZ."
     }
 ]
 
@@ -46,7 +47,7 @@ export default function CommercialInsurance() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Commercial Insurance">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Commercial Auto / Fleet Coverage">
                 <div>
                     <div className="serviceleft-section-area section-padding5">
                         <div className="container">
@@ -54,23 +55,23 @@ export default function CommercialInsurance() {
                                 <div className="col-lg-1" />
                                 <div className="col-lg-10">
                                     <div className="serviceauthior-area p-0">
-                                        <img src="/assets/images/newdecade/newdecade_19.jpg" alt="Commercial Insurance" />
+                                        <img src="/assets/images/newdecade/newdecade_44.jpg" alt="Commercial Fleet Coverage" />
                                         <h1 className="font-lora font-40 lineh-50 weight-600 color-29 margin-b20 margin-t28">
-                                            Commercial Insurance Solutions
+                                            Commercial Auto & Fleet Coverage: Our #1 Specialty
                                         </h1>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30 margin-b20">
-                                            As a licensed Fire & Casualty Insurance Broker, New Decade provides comprehensive commercial insurance solutions for businesses throughout California. From restaurants and bars to retail shops and offices, we protect businesses of all sizes and industries.
+                                            New Decade Insurance specializes in commercial auto and fleet coverage across California, Texas, Florida, and Arizona. From single commercial vehicles to multi-state fleet operations, we protect delivery services, logistics companies, trucking operations, and business transportation with 20+ years of expertise.
                                         </p>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                            With over 20 years of experience, we understand the unique challenges California businesses face. We work with top-rated carriers to deliver customized coverage that protects your business operations, assets, and employees.
+                                            As commercial auto specialists, we understand the unique challenges of managing fleet risk, DOT compliance, and multi-state operations. We work with top-rated carriers to deliver comprehensive coverage that keeps your business moving across all four states we serve.
                                         </p>
                                         <div className="border30" />
 
                                         <h1 className="font-lora font-40 lineh-50 weight-600 color-29 margin-b20">
-                                            Protecting California Businesses
+                                            Multi-State Fleet Protection You Can Trust
                                         </h1>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                            Running a business comes with risks. Our commercial insurance solutions help you manage those risks and protect what you've built. We offer flexible coverage options tailored to your specific industry and business needs.
+                                            Whether you're managing a small delivery fleet or coordinating interstate trucking operations, our commercial auto insurance provides the protection you need. We offer flexible, scalable coverage options tailored to your fleet size, vehicle types, and operational territories across CA, TX, FL, and AZ.
                                         </p>
 
                                         <div className="row">
@@ -81,10 +82,10 @@ export default function CommercialInsurance() {
                                                     </div>
                                                     <div className="approach-text">
                                                         <Link href="#" className="font-lora font-20 weight-600 color-29 margin-b ts d-inline-block">
-                                                            Industry Expertise
+                                                            Multi-State Expertise
                                                         </Link>
                                                         <p className="fontks font-16 lineh-26 weight-500 color-30 ts">
-                                                            We specialize in restaurants, bars, retail, contractors, and more. We understand your industry's unique insurance needs.
+                                                            Licensed and experienced in CA, TX, FL, and AZ. We understand DOT requirements and interstate commerce regulations across all four states.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -96,10 +97,10 @@ export default function CommercialInsurance() {
                                                     </div>
                                                     <div className="approach-text">
                                                         <Link href="#" className="font-lora font-20 weight-600 color-29 margin-b ts d-inline-block">
-                                                            Customized Solutions
+                                                            Scalable Fleet Solutions
                                                         </Link>
                                                         <p className="fontks font-16 lineh-26 weight-500 color-30 ts">
-                                                            Every business is different. We create tailored insurance packages that fit your specific needs and budget.
+                                                            From 1 vehicle to 100+ trucks. Our tech-forward approach provides fast COI turnaround and digital policy management for growing fleets.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -109,10 +110,10 @@ export default function CommercialInsurance() {
                                         <div className="border30" />
 
                                         <h1 className="font-lora font-40 lineh-50 weight-600 color-29 margin-b20 margin-t28">
-                                            Commercial Coverage Options
+                                            Commercial Auto Coverage Options
                                         </h1>
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30 margin-b20">
-                                            Protect your business with comprehensive coverage. We offer a full range of commercial insurance products to meet the needs of California businesses.
+                                            Comprehensive protection for all types of commercial vehicles and fleet operations across CA, TX, FL, and AZ. We offer specialized coverage for delivery, logistics, and transportation businesses.
                                         </p>
 
                                         <div className="row">
@@ -120,27 +121,13 @@ export default function CommercialInsurance() {
                                                 <div className="checkservice-area">
                                                     <p className="font-ks font-16 lineh-16 weight-600 color-29">
                                                         <span><img src="/assets/images/icons/check1.png" alt="" /></span>
-                                                        General Liability
+                                                        Commercial Auto Liability
                                                     </p>
                                                 </div>
                                                 <div className="checkservice-area">
                                                     <p className="font-ks font-16 lineh-16 weight-600 color-29">
                                                         <span><img src="/assets/images/icons/check1.png" alt="" /></span>
-                                                        Property Insurance
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-4">
-                                                <div className="checkservice-area">
-                                                    <p className="font-ks font-16 lineh-16 weight-600 color-29">
-                                                        <span><img src="/assets/images/icons/check1.png" alt="" /></span>
-                                                        Workers' Compensation
-                                                    </p>
-                                                </div>
-                                                <div className="checkservice-area">
-                                                    <p className="font-ks font-16 lineh-16 weight-600 color-29">
-                                                        <span><img src="/assets/images/icons/check1.png" alt="" /></span>
-                                                        Business Owners Policy (BOP)
+                                                        Physical Damage Coverage
                                                     </p>
                                                 </div>
                                             </div>
@@ -148,20 +135,34 @@ export default function CommercialInsurance() {
                                                 <div className="checkservice-area">
                                                     <p className="font-ks font-16 lineh-16 weight-600 color-29">
                                                         <span><img src="/assets/images/icons/check1.png" alt="" /></span>
-                                                        Liquor Liability
+                                                        Cargo Insurance
                                                     </p>
                                                 </div>
                                                 <div className="checkservice-area">
                                                     <p className="font-ks font-16 lineh-16 weight-600 color-29">
                                                         <span><img src="/assets/images/icons/check1.png" alt="" /></span>
-                                                        Commercial Auto
+                                                        Fleet Coverage
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4">
+                                                <div className="checkservice-area">
+                                                    <p className="font-ks font-16 lineh-16 weight-600 color-29">
+                                                        <span><img src="/assets/images/icons/check1.png" alt="" /></span>
+                                                        Hired & Non-Owned Auto
+                                                    </p>
+                                                </div>
+                                                <div className="checkservice-area">
+                                                    <p className="font-ks font-16 lineh-16 weight-600 color-29">
+                                                        <span><img src="/assets/images/icons/check1.png" alt="" /></span>
+                                                        Multi-State Operations
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                            Protect your business investment with comprehensive commercial insurance. Contact us today for a free quote customized to your business needs.
+                                            Protect your fleet and commercial vehicles with comprehensive multi-state coverage. Contact us today for a free quote customized to your transportation business needs across CA, TX, FL, and AZ.
                                         </p>
                                     </div>
                                 </div>
@@ -169,44 +170,10 @@ export default function CommercialInsurance() {
                         </div>
                     </div>
 
-                    <ViewMoreServices currentService="/services/commercial" />
+                    {/*<ViewMoreServices currentService="/services/commercial" />*/}
                     <FAQ faqs={faqs} />
 
-                    <div className="cta5-section-area section-padding4">
-                        <img src="/assets/images/newdecade/newdecade_19.jpg" alt="" className="elementors72" />
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6">
-                                    <div className="cta5-auhtor6-area">
-                                        <h1 className="font-lora font-48 lineh-52 color weight-600 margin-b text-capitalize">
-                                            Get Your Free Commercial Insurance Quote
-                                        </h1>
-                                        <p className="font-ks font-16 lineh-26 weight-500 color-21">
-                                            Protect your business with customized coverage. Call 1-800-250-5540 for expert guidance.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-2" />
-                                <div className="col-lg-4">
-                                    <div className="cta5-btn5-sexction">
-                                        <button
-                                            onClick={() => setIsQuoteModalOpen(true)}
-                                            className="font-ks font-16 lineh-16 weight-700 color margin-t32 contcat5"
-                                            style={{ cursor: 'pointer' }}
-                                        >
-                                            Get Free Quote
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </button>
-                                        <Link href="/contact" className="theme6-btn6 backgrnd6 font-ks lineh-16 weight-700 color-29 font-16">
-                                            Contact Us
-                                            <span><i className="fa-solid fa-arrow-right" /></span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/assets/images/elementor/elementor72.png" alt="" className="elementors73" />
-                    </div>
+                    <Cta9 />
                 </div>
             </Layout>
 

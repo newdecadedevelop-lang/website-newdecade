@@ -10,7 +10,7 @@ export async function POST(request) {
         const { formData, currentStep, isComplete } = body
 
         // Validate that at least step 1 is completed
-        if (!formData.firstName || !formData.email || !formData.phone) {
+        if (!formData.fullName || !formData.phone) {
             return NextResponse.json({
                 success: false,
                 message: 'Contact information is required'
@@ -25,17 +25,17 @@ export async function POST(request) {
             from: process.env.EMAIL_FROM || 'noreplay@allcentury.com',
             to: process.env.QUOTE_RECIPIENT_EMAIL || 'allcenturysite@gmail.com',
             subject: isComplete
-                ? `New Complete Insurance Quote - ${formData.firstName} ${formData.lastName}`
-                : `Incomplete Insurance Quote (Step ${currentStep}) - ${formData.firstName} ${formData.lastName}`,
+                ? `New Complete Insurance Quote - ${formData.fullName}`
+                : `Incomplete Insurance Quote (Step ${currentStep}) - ${formData.fullName}`,
             html: emailContent.companyEmail
         })
 
-        // Send confirmation email to customer (only if complete)
-        if (isComplete) {
+        // Send confirmation email to customer (only if complete and email is provided)
+        if (isComplete && formData.email) {
             await resend.emails.send({
                 from: process.env.EMAIL_FROM || 'noreplay@allcentury.com',
                 to: formData.email,
-                subject: 'Thank you for your insurance quote request - All Century Insurance',
+                subject: 'Thank you for your insurance quote request - New Decade Insurance',
                 html: emailContent.customerEmail
             })
         }
@@ -85,7 +85,7 @@ function buildEmailContent(formData, currentStep, isComplete) {
                 <div class="header">
                     <img
                     src="https://allcentury.com/assets/images/all_century_white_600.png"
-                    alt="All Century Insurance"
+                    alt="New Decade Insurance"
                     class="logo"
                     />
                     <h1 style="margin: 0;">New Insurance Quote Request</h1>
@@ -117,7 +117,7 @@ function buildEmailContent(formData, currentStep, isComplete) {
                 </div>
                 <div class="footer">
                     <p>This email was automatically generated from your website's quote form.</p>
-                    <p><strong>All Century Insurance</strong> | <a href="tel:18002505540">1-800-250-5540</a></p>
+                    <p><strong>New Decade Insurance</strong> | <a href="tel:18002505540">1-800-250-5540</a></p>
                 </div>
             </div>
         </body>
@@ -146,16 +146,16 @@ function buildEmailContent(formData, currentStep, isComplete) {
                 <div class="header">
                     <img
                     src="https://allcentury.com/assets/images/all_century_white_600.png"
-                    alt="All Century Insurance"
+                    alt="New Decade Insurance"
                     class="logo"
                     />
-                    <h1 style="margin: 0; font-size: 28px;">Thank You, ${formData.firstName}!</h1>
+                    <h1 style="margin: 0; font-size: 28px;">Thank You, ${formData.fullName}!</h1>
                     <p style="margin: 10px 0 0 0; font-size: 16px;">Your insurance quote request has been received</p>
                 </div>
                 <div class="content">
-                    <p style="font-size: 16px;">Dear ${formData.firstName} ${formData.lastName},</p>
+                    <p style="font-size: 16px;">Dear ${formData.fullName},</p>
 
-                    <p>Thank you for requesting an insurance quote from <strong>All Century Insurance</strong>. We've received your information and one of our experienced agents will contact you shortly.</p>
+                    <p>Thank you for requesting an insurance quote from <strong>New Decade Insurance</strong>. We've received your information and one of our experienced agents will contact you shortly.</p>
 
                     <div class="highlight-box">
                         <p style="margin: 0; font-size: 14px;">
@@ -186,17 +186,17 @@ function buildEmailContent(formData, currentStep, isComplete) {
                     </p>
 
                     <p style="font-size: 14px; color: #666; margin-top: 20px;">
-                        We're here to help you find the right coverage at the best price. Thank you for choosing All Century Insurance!
+                        We're here to help you find the right coverage at the best price. Thank you for choosing New Decade Insurance!
                     </p>
 
                     <p style="margin-top: 30px;">
                         Best regards,<br>
-                        <strong>All Century Insurance Team</strong><br>
+                        <strong>New Decade Insurance Team</strong><br>
                         <em>Serving California since 2005 | Hablamos Español</em>
                     </p>
                 </div>
                 <div class="footer">
-                    <p><strong>All Century Insurance</strong></p>
+                    <p><strong>New Decade Insurance</strong></p>
                     <p>Toll Free: 1-800-250-5540 | License #0F79375</p>
                     <p style="font-size: 11px; color: #999; margin-top: 15px;">
                         This email was sent to ${formData.email}. If you did not request this quote, please contact us immediately.
@@ -214,8 +214,8 @@ function buildStep1HTML(formData) {
     return `
         <div class="section">
             <h3>📞 Contact Information</h3>
-            <div class="field"><label>Name:</label> <span class="value">${formData.firstName} ${formData.lastName}</span></div>
-            <div class="field"><label>Email:</label> <span class="value"><a href="mailto:${formData.email}">${formData.email}</a></span></div>
+            <div class="field"><label>Name:</label> <span class="value">${formData.fullName}</span></div>
+            ${formData.email ? `<div class="field"><label>Email:</label> <span class="value"><a href="mailto:${formData.email}">${formData.email}</a></span></div>` : ''}
             <div class="field"><label>Phone:</label> <span class="value"><a href="tel:${formData.phone}">${formData.phone}</a></span></div>
             <div class="field"><label>Insurance Type:</label> <span class="value">${getInsuranceTypeLabel(formData.insuranceType)}</span></div>
             <div class="field"><label>Agreed to Contact:</label> <span class="value">${formData.agreeToContact ? 'Yes ✓' : 'No'}</span></div>

@@ -17,15 +17,15 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                             <div className="col-12">
                                 <div className="header-elements">
                                     <div className="site-logo">
-                                        <Link href="/"><img src="/assets/images/logo/NDLOGO_WHITE.svg" alt="" style={{ maxWidth: '300px' }} /></Link>
+                                        <Link href="/"><img src="/assets/images/logo/NDLOGO.svg" alt="" style={{ maxWidth: '300px' }} /></Link>
                                     </div>
                                     <div className="main-menu-ex homepage4 main-menu-ex7">
                                         <ul>
-                                            <li><Link href="/" className="font-ks font-16 weight-500 color">Home</Link></li>
-                                            <li><Link href="/about" className="font-ks font-16 weight-500 color">About Us</Link></li>
-                                            <li><Link href="/services" className="font-ks font-16 weight-500 color">Our Services</Link></li>
-                                            <li><Link href="/faqs" className="font-ks font-16 weight-500 color">FAQs</Link></li>
-                                            <li><Link href="/contact" className="font-ks font-16 weight-500 color">Contact</Link></li>
+                                            <li><Link href="/" className="font-ks font-16 weight-500 color-1">Home</Link></li>
+                                            <li><Link href="/about" className="font-ks font-16 weight-500 color-1">About Us</Link></li>
+                                            <li><Link href="/services" className="font-ks font-16 weight-500 color-1">Our Services</Link></li>
+                                            <li><Link href="/faqs" className="font-ks font-16 weight-500 color-1">FAQs</Link></li>
+                                            <li><Link href="/contact" className="font-ks font-16 weight-500 color-1">Contact</Link></li>
                                         </ul>
                                     </div>
                                     <div className="contact-3 d-lg-block d-none">
@@ -33,7 +33,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                             <button
                                                 onClick={() => setIsQuoteModalOpen(true)}
                                                 className="font-16 font-ks weight-700 color lineh-16 consulting9"
-                                                style={{ background: '#414141', border: 'none', cursor: 'pointer' }}
+                                                style={{ background: '#003385', border: 'none', cursor: 'pointer' }}
                                             >
                                                 Get Free Quote<span><i className="fa-solid fa-arrow-right" /></span>
                                             </button>
