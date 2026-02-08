@@ -65,7 +65,7 @@ export default function FAQs() {
                                                     <div className={isActive.key == 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                                         <div className="accordion-body">
                                                             <p className="font-ks font-16 lineh-26 weight-500 color-30">
-                                                                Founded in 2005, we have over 20 years of experience serving businesses and individuals across California, Texas, Florida, and Arizona. We've grown from a small startup to a multi-state commercial insurance powerhouse, serving 150K+ clients across 50+ industries while maintaining our commitment to 100% client advocacy.
+                                                                While New Decade Insurance officially launched its multi-state platform in 2025, our foundation is built on over 20 years of industry leadership. Our founding team has been serving the insurance needs of businesses since 2005, bringing two decades of deep-rooted expertise to every policy we write today.
                                                             </p>
                                                         </div>
                                                     </div>

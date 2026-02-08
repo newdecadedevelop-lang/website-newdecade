@@ -147,28 +147,41 @@ export default function Home() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="contcat5-textarea5">
-                                        <span className="about3span font-ks lineh-16 font-16 weight-600 color-29 d-inline-block margin-b24">Contact
-                                            Us</span>
+                                        <span className="about3span font-ks lineh-16 font-16 weight-600 color-29 d-inline-block margin-b24">Contact Us</span>
                                         <h1 className="font-lora font-48 lineh-56 weight-600 color-29 margin-b20 clienth2">Get Your Free Multi-State Insurance Quote</h1>
-                                        <p className="font-ks font-16 weight-500 lineh-26 color-30">With 20+ years of experience serving CA, TX, FL, and AZ, we specialize in commercial insurance with fast COI turnaround and tech-forward digital policy management. Whether you need fleet coverage, general liability, workers' comp, or personal auto, we're here to help across all four states we serve.</p>
-                                        <div className="phone7-textarea margin-t32 contactinnerbg">
-                                            <div className="phone7-icon">
-                                                <img src="/assets/images/icons/phone8.png" alt="" />
-                                            </div>
-                                            <div className="phone7-text">
-                                                <p className="font-16 lineh-16 weight-500 font-ks color-30 margin-b">Give us a Call</p>
-                                                <Link href="/tel:888-585-9910" className="font-lora font-24 weight-700 lineh-24 color-29">888-585-9910</Link>
-                                            </div>
-                                        </div>
-                                        <div className="phone7-textarea margin-t contactinnerbg">
+                                        <p className="font-ks font-16 weight-500 lineh-26 color-30 margin-b32">With 20+ years of experience serving CA, TX, FL, and AZ, we specialize in commercial insurance with fast COI turnaround and tech-forward digital policy management. Whether you need fleet coverage, general liability, workers' comp, or personal auto, we're here to help across all four states we serve.</p>
+
+                                        <h3 className="font-lora font-20 lineh-24 weight-600 color-29 margin-b20">National Inquiries</h3>
+                                        <div className="phone7-textarea contactinnerbg">
                                             <div className="phone7-icon">
                                                 <img src="/assets/images/icons/email7.png" alt="" />
                                             </div>
                                             <div className="phone7-text">
-                                                <p className="font-16 lineh-16 weight-500 font-ks color-30 margin-b">Send us an Email</p>
-                                                <Link href="/mailto:info@newdecadeinsurance.com" className="font-lora font-24 weight-700 lineh-24 color-29">info@newdecadeinsurance.com</Link>
+                                                <Link href="/mailto:info@newdecadeinsurance.com" className="font-lora font-20 weight-700 lineh-24 color-29">info@newdecadeinsurance.com</Link>
                                             </div>
                                         </div>
+                                        <div className="phone7-textarea margin-t contactinnerbg">
+                                            <div className="phone7-icon">
+                                                <img src="/assets/images/icons/phone8.png" alt="" />
+                                            </div>
+                                            <div className="phone7-text">
+                                                <Link href="/tel:888-585-9910" className="font-lora font-20 weight-700 lineh-24 color-29">888-585-9910 (Toll-Free)</Link>
+                                            </div>
+                                        </div>
+
+                                        <h3 className="font-lora font-20 lineh-24 weight-600 color-29 margin-t32 margin-b20">National Headquarters</h3>
+                                        <div className="phone7-textarea contactinnerbg">
+                                            <div className="phone7-icon">
+                                                <img src="/assets/images/icons/service9icon3.png" alt="" />
+                                            </div>
+                                            <div className="phone7-text">
+                                                <p className="font-lora font-20 weight-700 lineh-26 color-29">2215 S. Vermont Ave, Unit 103<br />Los Angeles, CA 90007</p>
+                                            </div>
+                                        </div>
+
+                                        <h3 className="font-lora font-20 lineh-24 weight-600 color-29 margin-t32 margin-b20">Regional Coverage</h3>
+                                        <p className="font-ks font-16 weight-500 lineh-26 color-30">Serving Businesses & Individuals across:</p>
+                                        <p className="font-ks font-18 weight-600 lineh-28 color-29 margin-t">California | Texas | Florida | Arizona</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
