@@ -9,7 +9,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: info@newdecadedevelop.com
+    email: info@newdecadeinsurance.com
     privateKeySecretRef:
       name: letsencrypt-prod
     solvers:
@@ -32,7 +32,7 @@ metadata:
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
-    email: info@newdecadedevelop.com
+    email: info@newdecadeinsurance.com
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:

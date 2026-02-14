@@ -12,11 +12,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - newdecadedevelop.com
-    - www.newdecadedevelop.com
+    - newdecadeinsurance.com
+    - www.newdecadeinsurance.com
     secretName: newdecade-production-tls
   rules:
-  - host: newdecadedevelop.com
+  - host: newdecadeinsurance.com
     http:
       paths:
       - path: /
@@ -26,7 +26,7 @@ spec:
             name: newdecade-website-service
             port:
               number: 80
-  - host: www.newdecadedevelop.com
+  - host: www.newdecadeinsurance.com
     http:
       paths:
       - path: /
